@@ -1,4 +1,6 @@
 {
   "item.charms.ruby_amulet": "Ruby Amulet",
-  "item.charms.lapis_ring": "Lapis Ring"
+  "item.charms.lapis_ring": "Lapis Ring",
+
+  "modmenu.modrinth": "Modrinth"
 }
