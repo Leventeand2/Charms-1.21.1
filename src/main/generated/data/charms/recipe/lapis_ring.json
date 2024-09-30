@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:lapis_lazuli"
+    },
+    "R": {
+      "item": "charms:basic_ring"
+    }
+  },
+  "pattern": [
+    " L ",
+    " R ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "charms:lapis_ring"
+  }
+}

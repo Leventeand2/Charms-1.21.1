@@ -11,20 +11,18 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
-public class RubyAmulet extends TrinketItem {
-    public RubyAmulet(Settings settings) {
+public class BasicRing extends TrinketItem {
+    public BasicRing(Settings settings) {
         super(settings);
     }
 
     @Override
     public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier) {
-        var modifires = super.getModifiers(stack, slot, entity, slotIdentifier);
-        // 10% extra health
-        modifires.put(EntityAttributes.GENERIC_MAX_HEALTH, new EntityAttributeModifier(slotIdentifier, 10, EntityAttributeModifier.Operation.ADD_VALUE));
+        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
 
+        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(slotIdentifier,
+                0.05, EntityAttributeModifier.Operation.ADD_VALUE));
 
-        return modifires;
+        return modifiers;
     }
-
-
 }

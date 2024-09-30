@@ -1,6 +1,8 @@
 {
   "replace": false,
+  "amount": 2,
   "values": [
-    "charms:lapis_ring"
+    "charms:lapis_ring",
+    "charms:basic_ring"
   ]
 }

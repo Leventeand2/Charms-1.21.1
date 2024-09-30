@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "charms",
 	"version": "${version}",
-	"name": "Charms",
+	"name": "Charms 'n Relics",
 	"description": "A mod that adds relics and artifacts to minecraft",
 	"authors": [
 		"DaWil__"
@@ -29,7 +29,9 @@
 		"fabricloader": ">=0.16.5",
 		"minecraft": "~1.21.1",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": "*",
+		"trinkets": ">=3.10.0",
+		"modmenu": ">=11.0.2"
 	},
 	"suggests": {
 		"another-mod": "*"

@@ -2,8 +2,8 @@ package net.levente;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
-import net.levente.util.ModLootTableModifiers;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -14,6 +14,7 @@ public class Charms implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerItems();
+		ModItemGroups.registerItemGroups();
 		//ModLootTableModifiers.modifyLootTables();
 		LOGGER.info("Hello Fabric world!");
 	}
