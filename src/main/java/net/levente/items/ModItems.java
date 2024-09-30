@@ -1,6 +1,7 @@
 package net.levente.items;
 
 import net.levente.Charms;
+import net.levente.items.custom.LapisRing;
 import net.levente.items.custom.RubyAmulet;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -11,6 +12,9 @@ public class ModItems {
 
     public static final Item RUBY_AMULET = registerItem("ruby_amulet",
             new RubyAmulet(new Item.Settings()));
+    public static final Item LAPIS_RING = registerItem("lapis_ring",
+            new LapisRing(new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Charms.MOD_ID, name), item);
