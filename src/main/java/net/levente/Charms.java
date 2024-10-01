@@ -2,7 +2,6 @@ package net.levente;
 
 import net.fabricmc.api.ModInitializer;
 
-import net.levente.enchantments.ModEnchantments;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
 import org.slf4j.Logger;
