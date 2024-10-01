@@ -16,10 +16,7 @@ public class Charms implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
-		ModEnchantments.registerModEnchantments();
-		//ModLootTableModifiers.modifyLootTables();
-		// Next Update: Add a new enchantment which increases the trinket's percent. Like when I enchant the Basic Ring,
-		// it will increase the percent of the running modifier by X%.
+		// Update: New block which "upgrades" the artifact item. This block will have a custom block entity.
 		LOGGER.info("Hello Fabric world!");
 	}
 }
