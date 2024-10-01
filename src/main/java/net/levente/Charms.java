@@ -2,6 +2,7 @@ package net.levente;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.levente.enchantments.ModEnchantments;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
 import org.slf4j.Logger;
@@ -15,7 +16,10 @@ public class Charms implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
-		// Next Update: Add a new block which will "upgrade" the artifact item. This will have a custom block entity
+		ModEnchantments.registerModEnchantments();
+		//ModLootTableModifiers.modifyLootTables();
+		// Next Update: Add a new enchantment which increases the trinket's percent. Like when I enchant the Basic Ring,
+		// it will increase the percent of the running modifier by X%.
 		LOGGER.info("Hello Fabric world!");
 	}
 }
