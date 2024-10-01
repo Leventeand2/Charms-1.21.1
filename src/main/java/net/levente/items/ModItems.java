@@ -1,9 +1,7 @@
 package net.levente.items;
 
 import net.levente.Charms;
-import net.levente.items.custom.BasicRing;
-import net.levente.items.custom.LapisRing;
-import net.levente.items.custom.RubyAmulet;
+import net.levente.items.custom.*;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -21,6 +19,12 @@ public class ModItems {
             new Item(new Item.Settings()));
     public static final Item BASIC_RING = registerItem("basic_ring",
             new BasicRing(new Item.Settings()));
+    public static final Item RAW_RUBY = registerItem("raw_ruby",
+            new Item(new Item.Settings()));
+    public static final Item GOLDEN_BRACELET = registerItem("golden_bracelet",
+            new GoldenBracelet(new Item.Settings()));
+    public static final Item RAW_RUBY_AMULET = registerItem("raw_ruby_amulet",
+            new RawRubyAmulet(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

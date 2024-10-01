@@ -1,11 +1,19 @@
-// 1.21.1	2024-09-30T21:49:47.9377584	Charms 'n Relics/Recipes
-e4aa91f0e5b7af6ad5375b469562a4355e494d34 data\charms\advancement\recipes\misc\ruby_amulet.json
+// 1.21.1	2024-10-01T16:29:38.0297903	Charms 'n Relics/Recipes
+649c70fe0ee514076558d48a7b14057fca1dd0fa data\charms\recipe\ruby_from_smelting_raw_ruby.json
 41d76ecd826136742a09cb4ace486c4aeab2e1a4 data\charms\recipe\amulet_string.json
-a9412c196fa83ef4294e892a92803e1d9077ffeb data\charms\recipe\lapis_ring.json
-888d991fc049d88c1370aec070e57a23de645b38 data\charms\advancement\recipes\misc\ruby.json
-fbc9d1fdb8ee6c74fb4c95c0a352ab526d2619c8 data\charms\advancement\recipes\misc\basic_ring.json
-050a09e25f9463e2364d697712937cbfe2f9c9f2 data\charms\recipe\ruby.json
+b3857d29f9fc542e78b027e08c2e69bef93ecd6f data\charms\advancement\recipes\misc\raw_ruby.json
+b28532c4a304127557284320082ec7588ce31b99 data\charms\recipe\raw_ruby_amulet.json
+193edc93b1a00fbea643e9fb2511943d43e74be7 data\charms\advancement\recipes\misc\raw_ruby_amulet.json
 e53b0a4094899034716b9fa0c5a47fd1cdeb412e data\charms\advancement\recipes\misc\amulet_string.json
-196fd6b6423021ce4488e772219fb6af46a18595 data\charms\recipe\ruby_amulet.json
+720480ee4a521d4668b9ef6e91f40a41c4491837 data\charms\recipe\ruby_amulet.json
 23840727cff061672148a9cebfb4f722bdf661df data\charms\advancement\recipes\misc\lapis_ring.json
+f4fa22cc735a4a45545aa5d40301b588b5c933d6 data\charms\recipe\raw_ruby.json
+8c95ace93ba673eccc4eaccfbfa07a21a53c71ce data\charms\recipe\ruby_from_blasting_raw_ruby.json
+e4aa91f0e5b7af6ad5375b469562a4355e494d34 data\charms\advancement\recipes\misc\ruby_amulet.json
+a9412c196fa83ef4294e892a92803e1d9077ffeb data\charms\recipe\lapis_ring.json
+fbc9d1fdb8ee6c74fb4c95c0a352ab526d2619c8 data\charms\advancement\recipes\misc\basic_ring.json
+32f9e0259153ff73b6485d79d27327baa0af8c2e data\charms\advancement\recipes\misc\ruby_from_smelting_raw_ruby.json
+ed739efcf8afa914e7af2771d7a06105325722a5 data\charms\advancement\recipes\misc\golden_bracelet.json
 2e8e4fb22494f8d0a49fa09ffee1e988cf2a62b8 data\charms\recipe\basic_ring.json
+3ddef407106ab2771981f3807b70faa3e9ecb526 data\charms\recipe\golden_bracelet.json
+e901cca63c51eadceed15cc1a35dd3d2f1661ab4 data\charms\advancement\recipes\misc\ruby_from_blasting_raw_ruby.json

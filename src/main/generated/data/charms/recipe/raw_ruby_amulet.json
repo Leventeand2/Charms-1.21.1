@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "R": {
-      "item": "charms:ruby"
+      "item": "charms:raw_ruby"
     },
     "S": {
       "item": "charms:amulet_string"
@@ -16,6 +16,6 @@
   ],
   "result": {
     "count": 1,
-    "id": "charms:ruby_amulet"
+    "id": "charms:raw_ruby_amulet"
   }
 }

@@ -20,6 +20,11 @@ public class ModItemGroups {
                         entries.add(ModItems.RUBY_AMULET);
                         entries.add(ModItems.LAPIS_RING);
                         entries.add(ModItems.RUBY);
+                        entries.add(ModItems.AMULET_STRING);
+                        entries.add(ModItems.BASIC_RING);
+                        entries.add(ModItems.RAW_RUBY);
+                        entries.add(ModItems.GOLDEN_BRACELET);
+                        entries.add(ModItems.RAW_RUBY_AMULET);
                     })).build());
 
 

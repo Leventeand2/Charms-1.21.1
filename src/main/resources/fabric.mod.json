@@ -3,7 +3,7 @@
 	"id": "charms",
 	"version": "${version}",
 	"name": "Charms 'n Relics",
-	"description": "A mod that adds relics and artifacts to minecraft",
+	"description": "A mod that adds relics and artifacts to minecraft. JEI(Just Enough Items) is recommended.",
 	"authors": [
 		"DaWil__"
 	],
@@ -34,7 +34,7 @@
 		"modmenu": ">=11.0.2"
 	},
 	"suggests": {
-		"another-mod": "*"
+		"another-mod": "jei"
 	},
 	"custom": {
 		"modmenu": {

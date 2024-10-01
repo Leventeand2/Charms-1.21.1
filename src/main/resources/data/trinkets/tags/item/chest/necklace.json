@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "charms:ruby_amulet"
+    "charms:ruby_amulet",
+    "charms:raw_ruby_amulet"
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 600,
+  "experience": 0.25,
+  "group": "ruby",
+  "ingredient": {
+    "item": "charms:raw_ruby"
+  },
+  "result": {
+    "id": "charms:ruby"
+  }
+}

@@ -6,7 +6,6 @@ import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
@@ -14,27 +13,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
-public class BasicRing extends TrinketItem {
-    public BasicRing(Settings settings) {
+public class GoldenBracelet extends TrinketItem {
+    public GoldenBracelet(Settings settings) {
         super(settings);
-    }
-
-    @Override
-    public Multimap<RegistryEntry<EntityAttribute>, EntityAttributeModifier> getModifiers(ItemStack stack, SlotReference slot, LivingEntity entity, Identifier slotIdentifier) {
-        var modifiers = super.getModifiers(stack, slot, entity, slotIdentifier);
-
-        modifiers.put(EntityAttributes.GENERIC_MOVEMENT_SPEED, new EntityAttributeModifier(slotIdentifier,
-                0.05, EntityAttributeModifier.Operation.ADD_VALUE));
-
-        return modifiers;
     }
 
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
-        StatusEffectInstance healing = new StatusEffectInstance(StatusEffects.REGENERATION, -1, 1, false, false);
         if (entity instanceof PlayerEntity player) {
-            player.addStatusEffect(healing);
+            StatusEffectInstance resistance = new StatusEffectInstance(StatusEffects.RESISTANCE, -1, 1, false, false);
+            player.addStatusEffect(resistance);
         }
     }
 
@@ -42,8 +31,7 @@ public class BasicRing extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            player.removeStatusEffect(StatusEffects.REGENERATION);
+            player.removeStatusEffect(StatusEffects.RESISTANCE);
         }
-
     }
 }

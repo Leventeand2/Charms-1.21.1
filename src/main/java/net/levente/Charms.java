@@ -16,6 +16,8 @@ public class Charms implements ModInitializer {
 		ModItems.registerItems();
 		ModItemGroups.registerItemGroups();
 		//ModLootTableModifiers.modifyLootTables();
+		// Next Update: Add a new enchantment which increases the trinket's percent. Like when I enchant the Basic Ring,
+		// it will increase the percent of the running modifier by X%.
 		LOGGER.info("Hello Fabric world!");
 	}
 }
