@@ -12,8 +12,7 @@ import net.minecraft.registry.Registry;
 public class ModBlocks {
 
     public static final Block NETHER_RUBY_ORE = registerBlock("nether_ruby_ore", new Block(AbstractBlock.Settings.create()
-            .requiresTool()
-            .strength(1.0f, 1.0f)));
+            .strength(0.5F, 0F)));
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);

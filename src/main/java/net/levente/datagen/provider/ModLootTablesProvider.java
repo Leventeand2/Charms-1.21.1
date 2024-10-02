@@ -15,7 +15,6 @@ public class ModLootTablesProvider extends FabricBlockLootTableProvider {
 
     @Override
     public void generate() {
-        addDrop(ModBlocks.NETHER_RUBY_ORE, drops(ModItems.RAW_RUBY));
-        addDropWithSilkTouch(ModBlocks.NETHER_RUBY_ORE, ModBlocks.NETHER_RUBY_ORE);
+        addDrop(ModBlocks.NETHER_RUBY_ORE, oreDrops(ModBlocks.NETHER_RUBY_ORE, ModItems.RAW_RUBY));
     }
 }
