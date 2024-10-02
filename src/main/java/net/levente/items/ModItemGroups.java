@@ -2,6 +2,7 @@ package net.levente.items;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.levente.Charms;
+import net.levente.blocks.ModBlocks;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -25,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.GOLDEN_BRACELET);
                         entries.add(ModItems.RAW_RUBY_AMULET);
+                        entries.add(ModBlocks.NETHER_RUBY_ORE);
                     })).build());
 
 

@@ -1,8 +1,9 @@
-package net.levente.datagen;
+package net.levente.datagen.provider;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.levente.Charms;
+import net.levente.blocks.ModBlocks;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
 import net.levente.items.custom.LapisRing;
@@ -42,5 +43,6 @@ public class ModLangProvider extends FabricLanguageProvider {
         addText(translationBuilder, BRACELET, "Bracelet");
         translationBuilder.add(ModItems.GOLDEN_BRACELET, "§6Binding of §cSerenity");
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
+        translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Ruby Ore");
     }
 }
