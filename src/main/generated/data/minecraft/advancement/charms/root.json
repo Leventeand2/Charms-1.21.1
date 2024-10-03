@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "has_amulet_string": {
+      "conditions": {
+        "items": [
+          {
+            "items": "charms:amulet_string"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "charms:textures/gui/advancements/backgrounds/advancement.png",
+    "description": {
+      "translate": "This is just the beginning"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "charms:amulet_string"
+    },
+    "title": {
+      "translate": "Intro into Artifacts"
+    }
+  },
+  "requirements": [
+    [
+      "has_amulet_string"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:charms/root",
+  "criteria": {
+    "has_ruby_amulet": {
+      "conditions": {
+        "items": [
+          {
+            "items": "charms:ruby_amulet"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "charms:textures/gui/advancements/backgrounds/advancement.png",
+    "description": {
+      "translate": "advancements.charms.ruby_amulet_description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "charms:ruby_amulet"
+    },
+    "title": {
+      "translate": "advancements.charms.ruby_amulet_title"
+    }
+  },
+  "requirements": [
+    [
+      "has_ruby_amulet"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -1,4 +1,10 @@
 {
+  "advancements.charms.amulet_string_description": "This is just the beginning",
+  "advancements.charms.amulet_string_title": "Intro into Artifacts",
+  "advancements.charms.lapis_ring_description": "You've made a Lapis Ring!",
+  "advancements.charms.lapis_ring_title": "Lapis is useful now!",
+  "advancements.charms.ruby_amulet_description": "You've made a Ruby Amulet!",
+  "advancements.charms.ruby_amulet_title": "What a Gem!",
   "block.charms.nether_ruby_ore": "Ruby Ore",
   "item.charms.amulet_string": "Amulet String",
   "item.charms.basic_ring": "Ring",
@@ -9,7 +15,11 @@
   "item.charms.ruby": "Ruby",
   "item.charms.ruby_amulet": "Ruby Amulet",
   "itemgroup.charms.charms_group": "Charms Item Group",
+  "tooltip.charms.golden_bracelet_tooltip": "§7When equipped:",
+  "tooltip.charms.golden_bracelet_tooltip_2": "§9Grants Resistance II",
   "tooltip.charms.lapis_ring_tooltip": "§7When equipped:",
   "tooltip.charms.lapis_ring_tooltip_2": "§9Grants infinite water breathing",
+  "tooltip.charms.raw_ruby_amulet_tooltip": "§7When equipped:",
+  "tooltip.charms.raw_ruby_amulet_tooltip_2": "§9Grants Slow Falling",
   "trinkets.slot.hand.bracelet": "Bracelet"
 }

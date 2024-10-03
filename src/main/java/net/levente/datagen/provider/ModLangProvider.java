@@ -6,7 +6,9 @@ import net.levente.Charms;
 import net.levente.blocks.ModBlocks;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
+import net.levente.items.custom.GoldenBracelet;
 import net.levente.items.custom.LapisRing;
+import net.levente.items.custom.RawRubyAmulet;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
@@ -44,5 +46,15 @@ public class ModLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GOLDEN_BRACELET, "§6Binding of §cSerenity");
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
         translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Ruby Ore");
+        addText(translationBuilder, ModAdvancementsProvider.AMULET_STRING_TITLE, "Intro into Artifacts");
+        addText(translationBuilder, ModAdvancementsProvider.AMULET_STRING_DESCRIPTION, "This is just the beginning");
+        addText(translationBuilder, GoldenBracelet.GOLDEN_BRACELET_TOOLTIP_1, "§7When equipped:");
+        addText(translationBuilder, GoldenBracelet.GOLDEN_BRACELET_TOOLTIP_2, "§9Grants Resistance II");
+        addText(translationBuilder, RawRubyAmulet.RAW_RUBY_AMULET_TOOLTIP_1, "§7When equipped:");
+        addText(translationBuilder, RawRubyAmulet.RAW_RUBY_AMULET_TOOLTIP_2, "§9Grants Slow Falling");
+        addText(translationBuilder, ModAdvancementsProvider.RUBY_AMULET_TITLE, "What a Gem!");
+        addText(translationBuilder, ModAdvancementsProvider.RUBY_AMULET_DESCRIPTION, "You've made a Ruby Amulet!");
+        addText(translationBuilder, ModAdvancementsProvider.LAPIS_RING_TITLE, "Lapis is useful now!");
+        addText(translationBuilder, ModAdvancementsProvider.LAPIS_RING_DESCRIPTION, "You've made a Lapis Ring!");
     }
 }

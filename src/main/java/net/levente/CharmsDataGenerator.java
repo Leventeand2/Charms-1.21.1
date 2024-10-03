@@ -2,10 +2,7 @@ package net.levente;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.levente.datagen.provider.ModLangProvider;
-import net.levente.datagen.provider.ModLootTablesProvider;
-import net.levente.datagen.provider.ModRecipesProvider;
-import net.levente.datagen.provider.ModModelProvider;
+import net.levente.datagen.provider.*;
 import net.levente.datagen.generator.CharmsModWorldGenerator;
 import net.levente.datagen.worldgen.ModConfiguredFeature;
 import net.levente.datagen.worldgen.ModPlacedFeature;
@@ -22,6 +19,7 @@ public class CharmsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModRecipesProvider::new);
 		pack.addProvider(CharmsModWorldGenerator::new);
 		pack.addProvider(ModLootTablesProvider::new);
+		pack.addProvider(ModAdvancementsProvider::new);
 	}
 
 	@Override

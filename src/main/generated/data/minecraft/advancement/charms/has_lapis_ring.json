@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:charms/root",
+  "criteria": {
+    "has_lapis_ring": {
+      "conditions": {
+        "items": [
+          {
+            "items": "charms:lapis_ring"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "charms:textures/gui/advancements/backgrounds/advancement.png",
+    "description": {
+      "translate": "advancements.charms.lapis_ring_description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "charms:lapis_ring"
+    },
+    "title": {
+      "translate": "advancements.charms.lapis_ring_title"
+    }
+  },
+  "requirements": [
+    [
+      "has_lapis_ring"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
