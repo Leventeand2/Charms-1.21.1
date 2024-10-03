@@ -25,7 +25,7 @@ public class ModConfiguredFeature {
         List<OreFeatureConfig.Target> netherOreTargets = List.of(
                 OreFeatureConfig.createTarget(netherOreReplaceables, ModBlocks.NETHER_RUBY_ORE.getDefaultState()));
 
-        register(context, NETHER_RUBY_ORE_KEY, Feature.SCATTERED_ORE, new OreFeatureConfig(netherOreTargets, 9)); // 2 is the best for us. But it's for testing
+        register(context, NETHER_RUBY_ORE_KEY, Feature.SCATTERED_ORE, new OreFeatureConfig(netherOreTargets, 1)); // 1 is the best value. But it's for testing
 
     }
 

@@ -1,10 +1,11 @@
 {
+  "parent": "minecraft:charms/root",
   "criteria": {
-    "has_ruby": {
+    "has_basic_ring": {
       "conditions": {
         "items": [
           {
-            "items": "charms:ruby"
+            "items": "charms:basic_ring"
           }
         ]
       },
@@ -14,19 +15,20 @@
   "display": {
     "background": "charms:textures/gui/advancements/backgrounds/advancement.png",
     "description": {
-      "translate": "advancements.charms.amulet_string_description"
+      "translate": "advancements.charms.basic_ring_description"
     },
+    "frame": "challenge",
     "icon": {
       "count": 1,
-      "id": "charms:ruby"
+      "id": "charms:basic_ring"
     },
     "title": {
-      "translate": "advancements.charms.amulet_string_title"
+      "translate": "advancements.charms.basic_ring_title"
     }
   },
   "requirements": [
     [
-      "has_ruby"
+      "has_basic_ring"
     ]
   ],
   "sends_telemetry_event": true

@@ -13,6 +13,7 @@ import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
 import net.minecraft.text.TranslatableTextContent;
 import org.jetbrains.annotations.NotNull;
+import net.levente.datagen.provider.ModAdvancementsProvider.ModAdvancementTexts;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -46,15 +47,17 @@ public class ModLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.GOLDEN_BRACELET, "§6Binding of §cSerenity");
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
         translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Ruby Ore");
-        addText(translationBuilder, ModAdvancementsProvider.AMULET_STRING_TITLE, "Intro into Artifacts");
-        addText(translationBuilder, ModAdvancementsProvider.AMULET_STRING_DESCRIPTION, "This is just the beginning");
+        addText(translationBuilder, ModAdvancementTexts.RUBY_TITLE, "Intro into Artifacts");
+        addText(translationBuilder, ModAdvancementTexts.RUBY_DESCRIPTION, "This is just the beginning");
         addText(translationBuilder, GoldenBracelet.GOLDEN_BRACELET_TOOLTIP_1, "§7When equipped:");
         addText(translationBuilder, GoldenBracelet.GOLDEN_BRACELET_TOOLTIP_2, "§9Grants Resistance II");
         addText(translationBuilder, RawRubyAmulet.RAW_RUBY_AMULET_TOOLTIP_1, "§7When equipped:");
         addText(translationBuilder, RawRubyAmulet.RAW_RUBY_AMULET_TOOLTIP_2, "§9Grants Slow Falling");
-        addText(translationBuilder, ModAdvancementsProvider.RUBY_AMULET_TITLE, "What a Gem!");
-        addText(translationBuilder, ModAdvancementsProvider.RUBY_AMULET_DESCRIPTION, "You've made a Ruby Amulet!");
-        addText(translationBuilder, ModAdvancementsProvider.LAPIS_RING_TITLE, "Lapis is useful now!");
-        addText(translationBuilder, ModAdvancementsProvider.LAPIS_RING_DESCRIPTION, "You've made a Lapis Ring!");
+        addText(translationBuilder, ModAdvancementTexts.RUBY_AMULET_TITLE, "What a Gem!");
+        addText(translationBuilder, ModAdvancementTexts.RUBY_AMULET_DESCRIPTION, "You've made a Ruby Amulet!");
+        addText(translationBuilder, ModAdvancementTexts.BASIC_RING_TITLE, "Ohh so beautiful!");
+        addText(translationBuilder, ModAdvancementTexts.BASIC_RING_DESCRIPTION, "You've made a Basic Ring!");
+        addText(translationBuilder, ModAdvancementTexts.LAPIS_RING_TITLE, "Lapis is useful now!");
+        addText(translationBuilder, ModAdvancementTexts.LAPIS_RING_DESCRIPTION, "You've made a Lapis Ring!");
     }
 }

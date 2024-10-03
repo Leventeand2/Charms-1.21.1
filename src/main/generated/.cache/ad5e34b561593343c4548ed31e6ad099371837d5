@@ -1,4 +1,5 @@
-// 1.21.1	2024-10-03T17:37:46.5912738	Charms 'n Relics/Advancements
+// 1.21.1	2024-10-03T19:19:28.4162737	Charms 'n Relics/Advancements
 4b5a82c257deefed5e23a71f6f6dff864feccee4 data\minecraft\advancement\charms\has_ruby_amulet.json
-352faa3fcaf8296837a2a4f247698af3e6fba29e data\minecraft\advancement\charms\root.json
-3999ea6f2f0155d41581d686979e35fd87044786 data\minecraft\advancement\charms\has_lapis_ring.json
+09312e857be523f60121818b8379b6588910c627 data\minecraft\advancement\charms\root.json
+96992fc4224c073b77f2dd0f1058df9f23c4019d data\minecraft\advancement\charms\has_basic_ring.json
+bf91b6479e512c2ab1e7a9e36cee8bc8aebd7282 data\minecraft\advancement\charms\has_lapis_ring.json
