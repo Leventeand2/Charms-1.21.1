@@ -1,11 +1,13 @@
-// 1.21.1	2024-10-03T19:19:28.4152743	Charms 'n Relics/Recipes
+// 1.21.1	2024-10-03T21:31:41.5909147	Charms 'n Relics/Recipes
 649c70fe0ee514076558d48a7b14057fca1dd0fa data\charms\recipe\ruby_from_smelting_raw_ruby.json
+03123497a05a3cc003f82dd0d17ae90b2be6db1b data\charms\recipe\mask_of_shadows.json
 41d76ecd826136742a09cb4ace486c4aeab2e1a4 data\charms\recipe\amulet_string.json
 b28532c4a304127557284320082ec7588ce31b99 data\charms\recipe\raw_ruby_amulet.json
 193edc93b1a00fbea643e9fb2511943d43e74be7 data\charms\advancement\recipes\misc\raw_ruby_amulet.json
 e53b0a4094899034716b9fa0c5a47fd1cdeb412e data\charms\advancement\recipes\misc\amulet_string.json
 23840727cff061672148a9cebfb4f722bdf661df data\charms\advancement\recipes\misc\lapis_ring.json
 720480ee4a521d4668b9ef6e91f40a41c4491837 data\charms\recipe\ruby_amulet.json
+b60368ddde5a619382dc7c7c40d9a437a71776a3 data\charms\advancement\recipes\misc\mask_of_shadows.json
 8c95ace93ba673eccc4eaccfbfa07a21a53c71ce data\charms\recipe\ruby_from_blasting_raw_ruby.json
 e4aa91f0e5b7af6ad5375b469562a4355e494d34 data\charms\advancement\recipes\misc\ruby_amulet.json
 a9412c196fa83ef4294e892a92803e1d9077ffeb data\charms\recipe\lapis_ring.json

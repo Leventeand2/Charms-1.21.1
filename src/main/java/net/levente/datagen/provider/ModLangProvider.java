@@ -1,5 +1,6 @@
 package net.levente.datagen.provider;
 
+import client.ClientEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.levente.Charms;
@@ -59,5 +60,10 @@ public class ModLangProvider extends FabricLanguageProvider {
         addText(translationBuilder, ModAdvancementTexts.BASIC_RING_DESCRIPTION, "You've made a Basic Ring!");
         addText(translationBuilder, ModAdvancementTexts.LAPIS_RING_TITLE, "Lapis is useful now!");
         addText(translationBuilder, ModAdvancementTexts.LAPIS_RING_DESCRIPTION, "You've made a Lapis Ring!");
+        translationBuilder.add(ModItems.MASK_OF_SHADOWS, "Mask of Shadows");
+        addText(translationBuilder, ModAdvancementTexts.MASK_OF_SHADOWS_TITLE, "Shadowy Figure");
+        addText(translationBuilder, ModAdvancementTexts.MASK_OF_SHADOWS_DESCRIPTION, "You've made a Mask of Shadows!");
+        addText(translationBuilder, ClientEntrypoint.MASK_OF_SHADOWS_TITLE, "Mask of Shadows Invisibility");
+        addText(translationBuilder, ClientEntrypoint.CHARMS_TITLE, "Charms 'n Relics");
     }
 }

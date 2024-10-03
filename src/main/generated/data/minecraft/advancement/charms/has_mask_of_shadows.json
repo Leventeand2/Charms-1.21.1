@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:charms/root",
+  "criteria": {
+    "has_mask_of_shadows": {
+      "conditions": {
+        "items": [
+          {
+            "items": "charms:mask_of_shadows"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "charms:textures/gui/advancements/backgrounds/advancement.png",
+    "description": {
+      "translate": "advancements.charms.mask_of_shadows_description"
+    },
+    "frame": "challenge",
+    "icon": {
+      "count": 1,
+      "id": "charms:mask_of_shadows"
+    },
+    "title": {
+      "translate": "advancements.charms.mask_of_shadows_title"
+    }
+  },
+  "requirements": [
+    [
+      "has_mask_of_shadows"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

@@ -26,6 +26,8 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
         public static final Text BASIC_RING_DESCRIPTION = Text.translatable("advancements." + Charms.MOD_ID + ".basic_ring_description");
         public static final Text LAPIS_RING_TITLE = Text.translatable("advancements." + Charms.MOD_ID + ".lapis_ring_title");
         public static final Text LAPIS_RING_DESCRIPTION = Text.translatable("advancements." + Charms.MOD_ID + ".lapis_ring_description");
+        public static final Text MASK_OF_SHADOWS_TITLE = Text.translatable("advancements." + Charms.MOD_ID + ".mask_of_shadows_title");
+        public static final Text MASK_OF_SHADOWS_DESCRIPTION = Text.translatable("advancements." + Charms.MOD_ID + ".mask_of_shadows_description");
     };
 
     public ModAdvancementsProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registryLookup) {
@@ -86,5 +88,18 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                 )
                 .criterion("has_lapis_ring", InventoryChangedCriterion.Conditions.items(ModItems.LAPIS_RING))
                 .build(consumer, Charms.MOD_ID + "/has_lapis_ring");
+        AdvancementEntry gotMaskOfShadows = Advancement.Builder.create().parent(rootAdvancement)
+                .display(
+                        ModItems.MASK_OF_SHADOWS,
+                        ModAdvancementTexts.MASK_OF_SHADOWS_TITLE,
+                        ModAdvancementTexts.MASK_OF_SHADOWS_DESCRIPTION,
+                        Identifier.of(Charms.MOD_ID + ":textures/gui/advancements/backgrounds/advancement.png"),
+                        AdvancementFrame.CHALLENGE,
+                        true,
+                        true,
+                        false
+                )
+                .criterion("has_mask_of_shadows", InventoryChangedCriterion.Conditions.items(ModItems.MASK_OF_SHADOWS))
+                .build(consumer, Charms.MOD_ID + "/has_mask_of_shadows");
     }
 }

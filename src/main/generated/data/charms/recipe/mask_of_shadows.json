@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "R": {
+      "item": "minecraft:rabbit_hide"
+    }
+  },
+  "pattern": [
+    "LLL",
+    "LRL",
+    "LLL"
+  ],
+  "result": {
+    "count": 1,
+    "id": "charms:mask_of_shadows"
+  }
+}

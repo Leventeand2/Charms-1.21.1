@@ -25,6 +25,8 @@ public class ModItems {
             new GoldenBracelet(new Item.Settings()));
     public static final Item RAW_RUBY_AMULET = registerItem("raw_ruby_amulet",
             new RawRubyAmulet(new Item.Settings()));
+    public static final Item MASK_OF_SHADOWS = registerItem("mask_of_shadows",
+            new MaskOfShadows(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

@@ -1,4 +1,4 @@
-// 1.21.1	2024-10-03T19:19:28.412276	Charms 'n Relics/Model Definitions
+// 1.21.1	2024-10-03T21:31:41.5869169	Charms 'n Relics/Model Definitions
 c2055c7d5225438578e08a08cee0cd5972abb44d assets\charms\models\block\nether_ruby_ore.json
 c1195265b965bdadb951f034cfd82666d285ff38 assets\charms\models\item\raw_ruby.json
 f5053c4ada53561b5d3a4dadce1a986e52a1fbaf assets\charms\models\item\nether_ruby_ore.json
@@ -7,5 +7,6 @@ e6c8b3facb5e469250a3d92ce61c13a3d8a86ff3 assets\charms\blockstates\nether_ruby_o
 e2b3d75e8e1da45f60146c2c0bbb12df6e058201 assets\charms\models\item\raw_ruby_amulet.json
 23d2a9d5f78ec182874f4e81c910dae95e84fc13 assets\charms\models\item\lapis_ring.json
 d3ad17f73ea67eaad40735f15648dd75f4687a32 assets\charms\models\item\amulet_string.json
+95cd0db81d28c3e0ddc39e3a3fc2418a22f818f5 assets\charms\models\item\mask_of_shadows.json
 db9d12ff01474615774ce05e67b0b5cdda6c6245 assets\charms\models\item\basic_ring.json
 00777bffed13d755a68d7bb70b220e652507c199 assets\charms\models\item\golden_bracelet.json
