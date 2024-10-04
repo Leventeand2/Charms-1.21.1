@@ -21,12 +21,13 @@
   "item.charms.ruby": "Ruby",
   "item.charms.ruby_amulet": "Ruby Amulet",
   "itemgroup.charms.charms_group": "Charms Item Group",
-  "key.charms.mask_of_shadows": "Mask of Shadows Invisibility",
   "tooltip.charms.golden_bracelet_tooltip": "§7When equipped:",
   "tooltip.charms.golden_bracelet_tooltip_2": "§9Grants Resistance II",
   "tooltip.charms.lapis_ring_tooltip": "§7When equipped:",
   "tooltip.charms.lapis_ring_tooltip_2": "§9Grants infinite water breathing",
   "tooltip.charms.raw_ruby_amulet_tooltip": "§7When equipped:",
   "tooltip.charms.raw_ruby_amulet_tooltip_2": "§9Grants Slow Falling",
-  "trinkets.slot.hand.bracelet": "Bracelet"
+  "trinkets.slot.hand.bracelet": "Bracelet",
+  "category.charms.mos": "Charms 'n Relics",
+  "key.charms.mos": "Mask Of Shadows Invisibility"
 }

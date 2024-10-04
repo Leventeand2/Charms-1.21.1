@@ -1,6 +1,7 @@
 package net.levente.blocks;
 
 import net.levente.Charms;
+import net.levente.blocks.custom.ArtifactAmplifier;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -13,6 +14,8 @@ public class ModBlocks {
 
     public static final Block NETHER_RUBY_ORE = registerBlock("nether_ruby_ore", new Block(AbstractBlock.Settings.create()
             .strength(0.5F, 0F).sounds(BlockSoundGroup.NETHER_ORE)));
+    public static final Block ARTIFACT_AMPLIFIER = Registry.register(Registries.BLOCK, Charms.id("artifact_amplifier"),
+            new ArtifactAmplifier(AbstractBlock.Settings.create().nonOpaque()));
 
     public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
