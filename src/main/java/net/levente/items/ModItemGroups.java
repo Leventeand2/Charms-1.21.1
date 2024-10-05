@@ -28,7 +28,8 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY_AMULET);
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModItems.MASK_OF_SHADOWS);
-                        entries.add(ModBlocks.ARTIFACT_AMPLIFIER);
+                        entries.add(ModBlocks.ARTIFACT_CRAFTER);
+                        entries.add(ModItems.RUBY_RING);
                     })).build());
 
 
