@@ -42,5 +42,6 @@ public class ModLangProvider extends FabricLanguageProvider {
         addText(translationBuilder, BRACELET, "Bracelet");
         translationBuilder.add(ModItems.GOLDEN_BRACELET, "§6Binding of §cSerenity");
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
+
     }
 }

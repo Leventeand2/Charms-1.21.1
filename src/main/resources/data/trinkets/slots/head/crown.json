@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "icon": "charms:gui/slots/crown",
+  "order": -512,
+  "validator_predicates": ["trinkets:tag"],
+  "amount": 1
+}

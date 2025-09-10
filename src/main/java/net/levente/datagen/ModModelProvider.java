@@ -27,5 +27,7 @@ public class ModModelProvider extends FabricModelProvider {
         modelGen.register(ModItems.RAW_RUBY, Models.GENERATED);
         modelGen.register(ModItems.GOLDEN_BRACELET, Models.GENERATED);
         modelGen.register(ModItems.RAW_RUBY_AMULET, Models.GENERATED);
+        modelGen.register(ModItems.RUBY_AMULET, Models.GENERATED);
+        modelGen.register(ModItems.ETHER_CROWN, Models.GENERATED);
     }
 }

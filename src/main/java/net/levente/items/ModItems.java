@@ -25,6 +25,10 @@ public class ModItems {
             new GoldenBracelet(new Item.Settings()));
     public static final Item RAW_RUBY_AMULET = registerItem("raw_ruby_amulet",
             new RawRubyAmulet(new Item.Settings()));
+    public static final Item ETHER_CROWN = registerItem("ether_crown",
+            new EtherCrown(new Item.Settings()));
+
+    // TODO: Make purified gold ingot
 
 
     private static Item registerItem(String name, Item item) {
