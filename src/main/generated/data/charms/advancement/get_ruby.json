@@ -1,0 +1,31 @@
+{
+  "criteria": {
+    "got_ruby": {
+      "conditions": {
+        "items": [
+          {
+            "items": "charms:ruby"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+    "description": "Look at some craftings with ruby!",
+    "frame": "goal",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "charms:ruby"
+    },
+    "title": "Introduction into relics!"
+  },
+  "requirements": [
+    [
+      "got_ruby"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

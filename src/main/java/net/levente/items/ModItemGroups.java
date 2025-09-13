@@ -25,6 +25,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.GOLDEN_BRACELET);
                         entries.add(ModItems.RAW_RUBY_AMULET);
+                        entries.add(ModItems.ETHER_CROWN);
                     })).build());
 
 

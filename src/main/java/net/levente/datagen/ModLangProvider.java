@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.levente.Charms;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
+import net.levente.items.custom.EtherCrown;
 import net.levente.items.custom.LapisRing;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.text.Text;
@@ -42,6 +43,9 @@ public class ModLangProvider extends FabricLanguageProvider {
         addText(translationBuilder, BRACELET, "Bracelet");
         translationBuilder.add(ModItems.GOLDEN_BRACELET, "§6Binding of §cSerenity");
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
-
+        translationBuilder.add(ModItems.ETHER_CROWN, "§6Ether Crown");
+        addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_1, "§7When equipped:");
+        addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_2, "§9Grants infinite luck 3");
+        addText(translationBuilder, Text.translatable("trinkets.slot.head.crown"), "Crown");
     }
 }

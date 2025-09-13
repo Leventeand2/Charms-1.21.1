@@ -1,6 +1,7 @@
 {
   "item.charms.amulet_string": "Amulet String",
   "item.charms.basic_ring": "Ring",
+  "item.charms.ether_crown": "§6Ether Crown",
   "item.charms.golden_bracelet": "§6Binding of §cSerenity",
   "item.charms.lapis_ring": "Lapis Ring",
   "item.charms.raw_ruby": "Raw Ruby",
@@ -8,7 +9,10 @@
   "item.charms.ruby": "Ruby",
   "item.charms.ruby_amulet": "Ruby Amulet",
   "itemgroup.charms.charms_group": "Charms Item Group",
+  "tooltip.charms.ether_crown_tooltip": "§7When equipped:",
+  "tooltip.charms.ether_crown_tooltip_2": "§9Grants infinite luck 3",
   "tooltip.charms.lapis_ring_tooltip": "§7When equipped:",
   "tooltip.charms.lapis_ring_tooltip_2": "§9Grants infinite water breathing",
-  "trinkets.slot.hand.bracelet": "Bracelet"
+  "trinkets.slot.hand.bracelet": "Bracelet",
+  "trinkets.slot.head.crown": "Crown"
 }

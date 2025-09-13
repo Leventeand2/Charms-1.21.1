@@ -27,7 +27,7 @@ public class EtherCrown extends TrinketItem {
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            StatusEffectInstance luck = new StatusEffectInstance(StatusEffects.LUCK, -1, 1, false, false);
+            StatusEffectInstance luck = new StatusEffectInstance(StatusEffects.LUCK, -1, 3, false, false);
             player.addStatusEffect(luck);
         }
     }

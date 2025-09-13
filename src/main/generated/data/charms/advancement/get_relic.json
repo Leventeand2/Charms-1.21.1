@@ -1,0 +1,38 @@
+{
+  "parent": "charms:get_ruby",
+  "criteria": {
+    "got_relic": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "charms:basic_ring",
+              "charms:lapis_ring",
+              "charms:golden_bracelet",
+              "charms:ether_crown",
+              "charms:raw_ruby_amulet",
+              "charms:ruby_amulet"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "display": {
+    "description": "Wow, what do these do?",
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "charms:amulet_string"
+    },
+    "title": "Ancient relics!"
+  },
+  "requirements": [
+    [
+      "got_relic"
+    ]
+  ],
+  "sends_telemetry_event": true
+}
