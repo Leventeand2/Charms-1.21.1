@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 400,
+  "experience": 3.0,
+  "group": "purified_gold",
+  "ingredient": {
+    "item": "minecraft:gold_block"
+  },
+  "result": {
+    "id": "charms:purified_gold_ingot"
+  }
+}

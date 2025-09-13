@@ -26,6 +26,7 @@ public class ModItemGroups {
                         entries.add(ModItems.GOLDEN_BRACELET);
                         entries.add(ModItems.RAW_RUBY_AMULET);
                         entries.add(ModItems.ETHER_CROWN);
+                        entries.add(ModItems.PURIFIED_GOLD_INGOT);
                     })).build());
 
 

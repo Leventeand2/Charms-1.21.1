@@ -82,5 +82,33 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModItems.RAW_RUBY), conditionsFromItem(ModItems.RAW_RUBY))
                 .criterion(hasItem(ModItems.AMULET_STRING), conditionsFromItem(ModItems.AMULET_STRING))
                 .offerTo(exporter);
+
+        offerSmelting(
+                exporter,
+                List.of(Items.GOLD_BLOCK),
+                RecipeCategory.MISC,
+                ModItems.PURIFIED_GOLD_INGOT,
+                3.0f,
+                400,
+                "purified_gold"
+        );
+
+        offerBlasting(
+                exporter,
+                List.of(Items.GOLD_BLOCK),
+                RecipeCategory.MISC,
+                ModItems.PURIFIED_GOLD_INGOT,
+                3.8f,
+                200,
+                "purified_gold"
+        );
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.ETHER_CROWN)
+                .pattern("G G")
+                .pattern("GGG")
+                .pattern("GGG")
+                .input('G', ModItems.PURIFIED_GOLD_INGOT)
+                .criterion(hasItem(ModItems.PURIFIED_GOLD_INGOT), conditionsFromItem(ModItems.PURIFIED_GOLD_INGOT))
+                .offerTo(exporter);
     }
 }

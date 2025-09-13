@@ -27,8 +27,8 @@ public class ModItems {
             new RawRubyAmulet(new Item.Settings()));
     public static final Item ETHER_CROWN = registerItem("ether_crown",
             new EtherCrown(new Item.Settings()));
-
-    // TODO: Make purified gold ingot
+    public static final Item PURIFIED_GOLD_INGOT = registerItem("purified_gold_ingot",
+            new Item(new Item.Settings().fireproof()));
 
 
     private static Item registerItem(String name, Item item) {
