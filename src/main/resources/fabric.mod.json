@@ -30,6 +30,8 @@
 		"minecraft": "~1.21.1",
 		"java": ">=21",
 		"fabric-api": "*",
+        "cardinal-components-base": ">=6.1.0",
+        "cardinal-components-entity": ">=6.1.0",
 		"trinkets": ">=3.10.0",
 		"modmenu": ">=11.0.2"
 	},
