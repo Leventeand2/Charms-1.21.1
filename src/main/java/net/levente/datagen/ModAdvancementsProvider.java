@@ -65,5 +65,20 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                 .criterion("got_relic", InventoryChangedCriterion.Conditions.items(relics))
 
                 .build(consumer, Charms.MOD_ID + ":get_relic");
+
+        AdvancementEntry getMaskOfShadows = Advancement.Builder.create()
+                .parent(getRuby)
+                .display(
+                        ModItems.MASK_OF_SHADOWS,
+                        Text.literal("Lurking in the Shadows"),
+                        Text.literal("This looks creepy"),
+                        null,
+                        AdvancementFrame.CHALLENGE,
+                        true,
+                        true,
+                        true
+                )
+                .criterion("got_mask_of_shadows", InventoryChangedCriterion.Conditions.items(ModItems.MASK_OF_SHADOWS))
+                .build(consumer, Charms.MOD_ID + ":get_mask_of_shadows");
     }
 }

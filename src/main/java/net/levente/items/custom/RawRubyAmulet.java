@@ -30,7 +30,9 @@ public class RawRubyAmulet extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            player.removeStatusEffect(StatusEffects.SLOW_FALLING);
+            if (player.hasStatusEffect(StatusEffects.SLOW_FALLING) && player.getStatusEffect(StatusEffects.SLOW_FALLING).isAmbient()) {
+                player.removeStatusEffect(StatusEffects.SLOW_FALLING);
+            }
         }
     }
 }

@@ -31,7 +31,9 @@ public class GoldenBracelet extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            player.removeStatusEffect(StatusEffects.RESISTANCE);
+            if (player.hasStatusEffect(StatusEffects.RESISTANCE) && player.getStatusEffect(StatusEffects.RESISTANCE).isAmbient()) {
+                player.removeStatusEffect(StatusEffects.RESISTANCE);
+            }
         }
     }
 }

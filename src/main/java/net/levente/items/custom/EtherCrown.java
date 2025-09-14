@@ -40,8 +40,10 @@ public class EtherCrown extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            player.removeStatusEffect(StatusEffects.LUCK);
-            player.removeStatusEffect(StatusEffects.NIGHT_VISION);
+            if (player.hasStatusEffect(StatusEffects.LUCK) && player.hasStatusEffect(StatusEffects.NIGHT_VISION) && player.getStatusEffect(StatusEffects.LUCK).isAmbient() && player.getStatusEffect(StatusEffects.NIGHT_VISION).isAmbient()) {
+                player.removeStatusEffect(StatusEffects.LUCK);
+                player.removeStatusEffect(StatusEffects.NIGHT_VISION);
+            }
         }
     }
 

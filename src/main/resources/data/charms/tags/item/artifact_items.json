@@ -2,6 +2,10 @@
   "values": [
     "charms:ruby_amulet",
     "charms:basic_ring",
-    "charms:golden_bracelet"
+    "charms:golden_bracelet",
+    "charms:lapis_ring",
+    "charms:raw_ruby_amulet",
+    "charms:ether_crown",
+    "charms:mask_of_shadows"
   ]
 }

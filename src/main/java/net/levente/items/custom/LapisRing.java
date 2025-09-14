@@ -33,7 +33,9 @@ public class LapisRing extends TrinketItem {
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player) {
-            player.removeStatusEffect(StatusEffects.CONDUIT_POWER);
+            if (player.hasStatusEffect(StatusEffects.CONDUIT_POWER) && player.getStatusEffect(StatusEffects.CONDUIT_POWER).isAmbient()) {
+                player.removeStatusEffect(StatusEffects.CONDUIT_POWER);
+            }
         }
     }
 

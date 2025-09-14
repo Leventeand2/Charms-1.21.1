@@ -110,5 +110,17 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('G', ModItems.PURIFIED_GOLD_INGOT)
                 .criterion(hasItem(ModItems.PURIFIED_GOLD_INGOT), conditionsFromItem(ModItems.PURIFIED_GOLD_INGOT))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MASK_OF_SHADOWS)
+                .pattern(" E ")
+                .pattern("PCP")
+                .pattern(" E ")
+                .input('E', Items.ENDER_PEARL)
+                .input('P', Items.PHANTOM_MEMBRANE)
+                .input('C', Items.COAL_BLOCK)
+                .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
+                .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
+                .criterion(hasItem(Items.COAL_BLOCK), conditionsFromItem(Items.COAL_BLOCK))
+                .offerTo(exporter);
     }
 }
