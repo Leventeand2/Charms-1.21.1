@@ -2,10 +2,11 @@ package net.levente;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.levente.datagen.ModAdvancementsProvider;
-import net.levente.datagen.ModLangProvider;
-import net.levente.datagen.ModRecipesProvider;
-import net.levente.datagen.ModModelProvider;
+import net.levente.datagen.*;
+import net.levente.world.ModConfiguredFeatures;
+import net.levente.world.ModPlacedFeatures;
+import net.minecraft.registry.RegistryBuilder;
+import net.minecraft.registry.RegistryKeys;
 
 public class CharmsDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -16,5 +17,14 @@ public class CharmsDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLangProvider::new);
 		pack.addProvider(ModRecipesProvider::new);
         pack.addProvider(ModAdvancementsProvider::new);
+        pack.addProvider(ModLootTableProvider::new);
+        pack.addProvider(ModBlockTagProvider::new);
+        pack.addProvider(ModRegistryDataGenerator::new);
 	}
+
+    @Override
+    public void buildRegistry(RegistryBuilder registryBuilder) {
+        registryBuilder.addRegistry(RegistryKeys.CONFIGURED_FEATURE, ModConfiguredFeatures::bootstrap);
+        registryBuilder.addRegistry(RegistryKeys.PLACED_FEATURE, ModPlacedFeatures::bootstrap);
+    }
 }

@@ -3,6 +3,7 @@ package net.levente.datagen;
 import com.terraformersmc.modmenu.util.mod.Mod;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.levente.blocks.ModBlocks;
 import net.levente.items.ModItems;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
@@ -15,7 +16,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.NETHER_RUBY_ORE);
     }
 
     @Override
@@ -30,6 +31,5 @@ public class ModModelProvider extends FabricModelProvider {
         modelGen.register(ModItems.RUBY_AMULET, Models.GENERATED);
         modelGen.register(ModItems.ETHER_CROWN, Models.GENERATED);
         modelGen.register(ModItems.PURIFIED_GOLD_INGOT, Models.GENERATED);
-        modelGen.register(ModItems.MASK_OF_SHADOWS, Models.GENERATED);
     }
 }

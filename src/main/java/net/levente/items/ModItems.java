@@ -1,5 +1,6 @@
 package net.levente.items;
 
+import dev.emi.trinkets.api.TrinketItem;
 import net.levente.Charms;
 import net.levente.items.custom.*;
 import net.minecraft.item.Item;
@@ -29,14 +30,12 @@ public class ModItems {
             new EtherCrown(new Item.Settings()));
     public static final Item PURIFIED_GOLD_INGOT = registerItem("purified_gold_ingot",
             new Item(new Item.Settings().fireproof()));
-    public static final Item MASK_OF_SHADOWS = registerItem("mask_of_shadows",
-            new MaskOfShadows(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Charms.MOD_ID, name), item);
     }
-    public static void registerItems() {
+    public static void registerModItems() {
         Charms.LOGGER.info("Registering items for: " + Charms.MOD_ID);
     }
 }

@@ -1,12 +1,14 @@
-// 1.21.1	2025-09-14T11:59:22.5345226	Charms 'n Relics/Model Definitions
-bb33869f5281e08020e846951a1edc99cdadc4a7 assets\charms\models\item\ruby_amulet.json
+// 1.21.1	2025-09-18T20:52:23.2874007	Charms 'n Relics/Model Definitions
 d3ad17f73ea67eaad40735f15648dd75f4687a32 assets\charms\models\item\amulet_string.json
 6d98ef2be20dd3b1c2472acb0bcb9c2c811292fa assets\charms\models\item\ruby.json
 e2b3d75e8e1da45f60146c2c0bbb12df6e058201 assets\charms\models\item\raw_ruby_amulet.json
+c2055c7d5225438578e08a08cee0cd5972abb44d assets\charms\models\block\nether_ruby_ore.json
+db9d12ff01474615774ce05e67b0b5cdda6c6245 assets\charms\models\item\basic_ring.json
+bb33869f5281e08020e846951a1edc99cdadc4a7 assets\charms\models\item\ruby_amulet.json
+f5053c4ada53561b5d3a4dadce1a986e52a1fbaf assets\charms\models\item\nether_ruby_ore.json
 00777bffed13d755a68d7bb70b220e652507c199 assets\charms\models\item\golden_bracelet.json
-95cd0db81d28c3e0ddc39e3a3fc2418a22f818f5 assets\charms\models\item\mask_of_shadows.json
 23d2a9d5f78ec182874f4e81c910dae95e84fc13 assets\charms\models\item\lapis_ring.json
 d1e63e6ec837b023ede91d8dd7eeea57219a8270 assets\charms\models\item\purified_gold_ingot.json
 b1ee4f968a2fd768596f9cefdcc54a0522d887c6 assets\charms\models\item\ether_crown.json
-db9d12ff01474615774ce05e67b0b5cdda6c6245 assets\charms\models\item\basic_ring.json
+e6c8b3facb5e469250a3d92ce61c13a3d8a86ff3 assets\charms\blockstates\nether_ruby_ore.json
 c1195265b965bdadb951f034cfd82666d285ff38 assets\charms\models\item\raw_ruby.json

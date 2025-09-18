@@ -2,8 +2,10 @@ package net.levente;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.levente.blocks.ModBlocks;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
+import net.levente.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,9 +15,12 @@ public class Charms implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		ModItems.registerItems();
+		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
-		// Update: New block which "upgrades" the artifact item. This block will have a custom block entity.
+        ModBlocks.registerModBlocks();
+
+        ModWorldGeneration.generateModWorldGen();
+
 		LOGGER.info("Hello Fabric world!");
 	}
 }

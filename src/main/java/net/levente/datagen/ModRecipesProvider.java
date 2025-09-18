@@ -24,11 +24,6 @@ public class ModRecipesProvider extends FabricRecipeProvider {
     public void generate(RecipeExporter exporter) {
         List<ItemConvertible> RUBY_SMELTING = List.of(ModItems.RAW_RUBY);
 
-        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.RAW_RUBY)
-                .input(Items.REDSTONE, 5)
-                .criterion(hasItem(Items.REDSTONE), conditionsFromItem(Items.REDSTONE))
-                .offerTo(exporter);
-
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AMULET_STRING)
                 .pattern("GGG")
                 .pattern("G G")
@@ -109,18 +104,6 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .pattern("GGG")
                 .input('G', ModItems.PURIFIED_GOLD_INGOT)
                 .criterion(hasItem(ModItems.PURIFIED_GOLD_INGOT), conditionsFromItem(ModItems.PURIFIED_GOLD_INGOT))
-                .offerTo(exporter);
-
-        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.MASK_OF_SHADOWS)
-                .pattern(" E ")
-                .pattern("PCP")
-                .pattern(" E ")
-                .input('E', Items.ENDER_PEARL)
-                .input('P', Items.PHANTOM_MEMBRANE)
-                .input('C', Items.COAL_BLOCK)
-                .criterion(hasItem(Items.ENDER_PEARL), conditionsFromItem(Items.ENDER_PEARL))
-                .criterion(hasItem(Items.PHANTOM_MEMBRANE), conditionsFromItem(Items.PHANTOM_MEMBRANE))
-                .criterion(hasItem(Items.COAL_BLOCK), conditionsFromItem(Items.COAL_BLOCK))
                 .offerTo(exporter);
     }
 }
