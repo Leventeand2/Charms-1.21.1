@@ -37,7 +37,7 @@ public class ModLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.LAPIS_RING, "Lapis Ring");
         addText(translationBuilder, ModItemGroups.CHARMS_TITLE, "Charms Item Group");
         addText(translationBuilder, LapisRing.LAPIS_RING_TOOLTIP_1, "§7When equipped:");
-        addText(translationBuilder, LapisRing.LAPIS_RING_TOOLTIP_2, "§9Grants infinite water breathing");
+        addText(translationBuilder, LapisRing.LAPIS_RING_TOOLTIP_2, "§9Grants Water Breathing I");
         translationBuilder.add(ModItems.AMULET_STRING, "Amulet String");
         translationBuilder.add(ModItems.BASIC_RING, "Ring");
         translationBuilder.add(ModItems.RAW_RUBY, "Raw Ruby");
@@ -46,10 +46,12 @@ public class ModLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
         translationBuilder.add(ModItems.ETHER_CROWN, "§6Ether Crown");
         addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_1, "§7When equipped:");
-        addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_2, "§9Grants infinite Luck III, and Night Vision, plus cancels Mining Fatigue and Poison.");
+        addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_2, "§9Grants Luck III, and Night Vision, plus cancels Mining Fatigue and Poison.");
         addText(translationBuilder, Text.translatable("trinkets.slot.head.crown"), "Crown");
         translationBuilder.add(ModItems.PURIFIED_GOLD_INGOT, "Purified Gold Ingot");
         addText(translationBuilder, Text.translatable("trinkets.slot.head.mask"),"Mask");
         translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Nether Ruby Ore");
+        translationBuilder.add(ModItems.SCULK_CHARM, "Crown of the Warden");
+        translationBuilder.add(ModItems.SATURATION_CHARM, "§6Amulet §fof §bGluttony");
     }
 }

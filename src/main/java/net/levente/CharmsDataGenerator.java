@@ -20,6 +20,7 @@ public class CharmsDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModLootTableProvider::new);
         pack.addProvider(ModBlockTagProvider::new);
         pack.addProvider(ModRegistryDataGenerator::new);
+        pack.addProvider(ModItemTagProvider::new);
 	}
 
     @Override

@@ -1,3 +1,5 @@
-// 1.21.1	2025-09-18T20:52:23.2899082	Charms 'n Relics/Advancements
-0a460e463040ad7d6e4628b126e002645efbd118 data\charms\advancement\get_ruby.json
-303ee6585acf85aa07963818c8cdad1bfb476b0d data\charms\advancement\get_relic.json
+// 1.21.1	2025-09-19T20:32:25.4564737	Charms 'n Relics/Advancements
+71267e903d80f3a142341a5a93ae25cb3f265bcb data\charms\advancement\get_ruby.json
+dbd26421277e1e48874537768a96eed95b293bbf data\charms\advancement\get_sculk_charm.json
+6d4610d02957c46531049b9e7cdbffc11a0486d5 data\charms\advancement\craft_ether_crown.json
+5ad2e3a1fe39ce7a7432885261bd87dcd5a9cbd5 data\charms\advancement\get_relic.json

@@ -11,8 +11,14 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipData;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
+
+import java.util.List;
+import java.util.Optional;
 
 public class BasicRing extends TrinketItem {
     public BasicRing(Settings settings) {
@@ -32,7 +38,7 @@ public class BasicRing extends TrinketItem {
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
-        StatusEffectInstance healing = new StatusEffectInstance(StatusEffects.REGENERATION, -1, 1, false, false);
+        StatusEffectInstance healing = new StatusEffectInstance(StatusEffects.REGENERATION, -1, 1, true, false);
         if (entity instanceof PlayerEntity player) {
             player.addStatusEffect(healing);
         }
@@ -45,5 +51,10 @@ public class BasicRing extends TrinketItem {
             player.removeStatusEffect(StatusEffects.REGENERATION);
         }
 
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

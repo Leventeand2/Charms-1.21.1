@@ -30,6 +30,11 @@ public class ModItems {
             new EtherCrown(new Item.Settings()));
     public static final Item PURIFIED_GOLD_INGOT = registerItem("purified_gold_ingot",
             new Item(new Item.Settings().fireproof()));
+    public static final Item SCULK_CHARM = registerItem("sculk_charm",
+            new SculkCharm(new Item.Settings()));
+
+    public static final Item SATURATION_CHARM = registerItem("saturation_charm",
+            new SaturationCharm(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

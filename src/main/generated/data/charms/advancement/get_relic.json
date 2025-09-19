@@ -5,14 +5,7 @@
       "conditions": {
         "items": [
           {
-            "items": [
-              "charms:basic_ring",
-              "charms:lapis_ring",
-              "charms:golden_bracelet",
-              "charms:ether_crown",
-              "charms:raw_ruby_amulet",
-              "charms:ruby_amulet"
-            ]
+            "items": "#charms:artifact_items"
           }
         ]
       },
@@ -22,7 +15,6 @@
   "display": {
     "description": "Wow, what do these do?",
     "frame": "challenge",
-    "hidden": true,
     "icon": {
       "count": 1,
       "id": "charms:amulet_string"

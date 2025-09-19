@@ -1,0 +1,17 @@
+package net.levente.util;
+
+import net.fabricmc.fabric.api.client.item.v1.ItemTooltipCallback;
+import net.levente.items.custom.BasicRing;
+import net.minecraft.text.Text;
+
+public class ClientModEvents {
+
+    public static void registerModEvents() {
+        // Basic Ring tooltip thing
+        ItemTooltipCallback.EVENT.register(((stack, context, type, tooltip) -> {
+            if (stack.getItem() instanceof BasicRing) {
+                tooltip.add(Text.literal("§9Grants Regeneration I"));
+            }
+        }));
+    }
+}

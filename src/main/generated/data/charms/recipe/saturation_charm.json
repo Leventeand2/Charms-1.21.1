@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "C": {
+      "item": "minecraft:cooked_beef"
+    },
+    "S": {
+      "item": "charms:amulet_string"
+    }
+  },
+  "pattern": [
+    " S ",
+    " C ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "charms:saturation_charm"
+  }
+}

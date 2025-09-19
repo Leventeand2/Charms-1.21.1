@@ -29,6 +29,8 @@ public class ModItemGroups {
                         entries.add(ModItems.ETHER_CROWN);
                         entries.add(ModItems.PURIFIED_GOLD_INGOT);
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
+                        entries.add(ModItems.SCULK_CHARM);
+                        entries.add(ModItems.SATURATION_CHARM);
                     })).build());
 
 

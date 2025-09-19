@@ -1,0 +1,27 @@
+{
+  "parent": "charms:get_ruby",
+  "criteria": {
+    "crafted_ether_crown": {
+      "conditions": {
+        "recipe_id": "charms:ether_crown"
+      },
+      "trigger": "minecraft:recipe_crafted"
+    }
+  },
+  "display": {
+    "description": "The holiest crown",
+    "frame": "challenge",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "charms:ether_crown"
+    },
+    "title": "Holy crown"
+  },
+  "requirements": [
+    [
+      "crafted_ether_crown"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

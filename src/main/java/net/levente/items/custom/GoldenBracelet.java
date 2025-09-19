@@ -10,8 +10,13 @@ import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.item.tooltip.TooltipType;
 import net.minecraft.registry.entry.RegistryEntry;
+import net.minecraft.text.Text;
+import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
+
+import java.util.List;
 
 public class GoldenBracelet extends TrinketItem {
     public GoldenBracelet(Settings settings) {
@@ -22,7 +27,7 @@ public class GoldenBracelet extends TrinketItem {
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            StatusEffectInstance resistance = new StatusEffectInstance(StatusEffects.RESISTANCE, -1, 1, false, false);
+            StatusEffectInstance resistance = new StatusEffectInstance(StatusEffects.RESISTANCE, -1, 1, true, false);
             player.addStatusEffect(resistance);
         }
     }
@@ -31,9 +36,17 @@ public class GoldenBracelet extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onUnequip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            if (player.hasStatusEffect(StatusEffects.RESISTANCE) && player.getStatusEffect(StatusEffects.RESISTANCE).isAmbient()) {
+            if (player.hasStatusEffect(StatusEffects.RESISTANCE)) {
                 player.removeStatusEffect(StatusEffects.RESISTANCE);
             }
         }
+    }
+
+    @Override
+    public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
+        tooltip.add(Text.literal("When equipped:").formatted(Formatting.GRAY));
+        tooltip.add(Text.literal("§9Grants Resistance I"));
+
+        super.appendTooltip(stack, context, tooltip, type);
     }
 }

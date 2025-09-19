@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "charms:ether_crown"
+    "charms:ether_crown",
+    "charms:sculk_charm"
   ]
 }

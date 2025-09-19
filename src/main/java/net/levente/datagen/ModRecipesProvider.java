@@ -105,5 +105,25 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .input('G', ModItems.PURIFIED_GOLD_INGOT)
                 .criterion(hasItem(ModItems.PURIFIED_GOLD_INGOT), conditionsFromItem(ModItems.PURIFIED_GOLD_INGOT))
                 .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SCULK_CHARM)
+                .pattern("SSS")
+                .pattern("SCS")
+                .pattern("SSS")
+                .input('S', Items.ECHO_SHARD)
+                .input('C', ModItems.ETHER_CROWN)
+                .criterion(hasItem(Items.ECHO_SHARD), conditionsFromItem(Items.ECHO_SHARD))
+                .criterion(hasItem(ModItems.ETHER_CROWN), conditionsFromItem(ModItems.ETHER_CROWN))
+                .offerTo(exporter);
+
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.SATURATION_CHARM)
+                .pattern(" S ")
+                .pattern(" C ")
+                .pattern("   ")
+                .input('S', ModItems.AMULET_STRING)
+                .input('C', Items.COOKED_BEEF)
+                .criterion(hasItem(Items.COOKED_BEEF), conditionsFromItem(Items.COOKED_BEEF))
+                .criterion(hasItem(ModItems.AMULET_STRING), conditionsFromItem(ModItems.AMULET_STRING))
+                .offerTo(exporter);
     }
 }

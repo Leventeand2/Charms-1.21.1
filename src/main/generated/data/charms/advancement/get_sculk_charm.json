@@ -1,10 +1,11 @@
 {
+  "parent": "charms:get_ruby",
   "criteria": {
-    "got_ruby": {
+    "got_sculk_charm": {
       "conditions": {
         "items": [
           {
-            "items": "charms:ruby"
+            "items": "charms:sculk_charm"
           }
         ]
       },
@@ -12,18 +13,17 @@
     }
   },
   "display": {
-    "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
-    "description": "Look at some craftings with ruby!",
+    "description": "You can't hear me now!",
     "frame": "goal",
     "icon": {
       "count": 1,
-      "id": "charms:ruby"
+      "id": "charms:sculk_charm"
     },
-    "title": "Introduction into relics"
+    "title": "Playing with sculk"
   },
   "requirements": [
     [
-      "got_ruby"
+      "got_sculk_charm"
     ]
   ],
   "sends_telemetry_event": true

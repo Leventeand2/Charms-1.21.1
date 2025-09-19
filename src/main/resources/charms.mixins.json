@@ -1,11 +1,12 @@
 {
-	"required": true,
-	"package": "net.levente.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
+  "required": true,
+  "package": "net.levente.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "SculkCharmMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
 	}
 }

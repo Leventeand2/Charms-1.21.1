@@ -2,7 +2,6 @@ package net.levente.items.custom;
 
 import dev.emi.trinkets.api.*;
 import net.levente.Charms;
-import net.levente.util.TrinketUtil;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
@@ -26,15 +25,17 @@ public class LapisRing extends TrinketItem {
         super.onEquip(stack, slot, entity);
 
         if (entity instanceof PlayerEntity player) {
-            player.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, -1, 2, false , false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.CONDUIT_POWER, -1, 2, true , false));
+            player.addStatusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, -1, 2, true , false));
         }
     }
 
     @Override
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         if (entity instanceof PlayerEntity player) {
-            if (player.hasStatusEffect(StatusEffects.CONDUIT_POWER) && player.getStatusEffect(StatusEffects.CONDUIT_POWER).isAmbient()) {
+            if (player.hasStatusEffect(StatusEffects.CONDUIT_POWER) && player.hasStatusEffect(StatusEffects.DOLPHINS_GRACE)) {
                 player.removeStatusEffect(StatusEffects.CONDUIT_POWER);
+                player.removeStatusEffect(StatusEffects.DOLPHINS_GRACE);
             }
         }
     }
