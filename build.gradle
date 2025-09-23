@@ -48,7 +48,9 @@ dependencies {
 	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
 
-    modApi "me.shedaniel:RoughlyEnoughItems-fabric:16.0.799"
+    modImplementation include("me.shedaniel:RoughlyEnoughItems-fabric:16.0.799")
+
+    modImplementation include("maven.modrinth:QdG47OkI:FUZo6yCk") // Model Gap Fix
 
 }
 

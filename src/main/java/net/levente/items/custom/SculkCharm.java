@@ -30,7 +30,7 @@ public class SculkCharm extends TrinketItem {
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         tooltip.add(Text.literal("When equipped:"));
         if (Screen.hasShiftDown()) {
-            tooltip.add(Text.literal("§9Disables the activation of sculk sensors (except when you step on 'em)."));
+            tooltip.add(Text.literal("§9Disables the activation of sculk sensors."));
         } else {
             tooltip.add(Text.literal("Hold SHIFT for more info!").formatted(Formatting.ITALIC, Formatting.GRAY));
         }

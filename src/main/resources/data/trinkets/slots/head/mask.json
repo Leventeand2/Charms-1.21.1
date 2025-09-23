@@ -1,7 +1,0 @@
-{
-  "replace": false,
-  "icon": "charms:gui/slots/mask",
-  "order": 0,
-  "validator_predicates": ["trinkets:tag"],
-  "amount": 1
-}

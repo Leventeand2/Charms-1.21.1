@@ -3,15 +3,15 @@
 	"id": "charms",
 	"version": "${version}",
 	"name": "Charms 'n Relics",
-	"description": "A mod that adds relics and artifacts to minecraft. REI(Roughly Enough Items) is recommended.",
+	"description": "A mod that adds relics and artifacts to minecraft. REI (Roughly Enough Items) is recommended.",
 	"authors": [
 		"DaWil__"
 	],
 	"contact": {
-		"homepage": "",
-		"sources": ""
+		"homepage": "https://modrinth.com/mod/charms-n-relics",
+		"sources": "https://github.com/Leventeand2/Charms-1.21.1"
 	},
-	"license": "CC0-1.0",
+	"license": "Charms n Relics License v1.0",
 	"icon": "assets/charms/icon.png",
 	"environment": "*",
 	"entrypoints": {

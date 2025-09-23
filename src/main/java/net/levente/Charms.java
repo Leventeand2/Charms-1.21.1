@@ -6,7 +6,7 @@ import net.levente.blocks.ModBlocks;
 import net.levente.component.ModDataComponentTypes;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
-import net.levente.util.ClientModEvents;
+import net.levente.util.ModLootTableModifiers;
 import net.levente.world.gen.ModWorldGeneration;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,6 +22,7 @@ public class Charms implements ModInitializer {
         ModBlocks.registerModBlocks();
         ModDataComponentTypes.registerDataCompTypes();
         ModWorldGeneration.generateModWorldGen();
+        ModLootTableModifiers.modifyLootTables();
 
 		LOGGER.info("Hello Fabric world!");
 	}

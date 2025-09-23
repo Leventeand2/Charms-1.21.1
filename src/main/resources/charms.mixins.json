@@ -4,7 +4,8 @@
   "compatibilityLevel": "JAVA_21",
   "mixins": [
     "ExampleMixin",
-    "SculkCharmMixin"
+    "SculkCharmMixin",
+    "SculkCharmStepOnMixin"
   ],
   "injectors": {
     "defaultRequire": 1
