@@ -34,7 +34,7 @@
 		"java": ">=21",
 		"fabric-api": "*",
 		"trinkets": ">=3.10.0",
-		"modmenu": ">=11.0.2"
+        "modelfix": "1.21-1.6"
 	},
 	"suggests": {
 		"mod": "rei"

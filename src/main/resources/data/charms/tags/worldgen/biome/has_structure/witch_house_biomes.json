@@ -1,0 +1,10 @@
+{
+  "replace": false,
+
+  "_comment1": " This biome tag can specify the biome directly. Or specify another biome tag by starting with # ",
+  "values": [
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:taiga",
+    "minecraft:snowy_taiga"
+  ]
+}

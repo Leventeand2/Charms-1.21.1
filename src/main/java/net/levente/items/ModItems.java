@@ -35,7 +35,6 @@ public class ModItems {
     public static final Item SATURATION_CHARM = registerItem("saturation_charm",
             new SaturationCharm(new Item.Settings().maxCount(1)));
 
-
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(Charms.MOD_ID, name), item);
     }

@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.7-SNAPSHOT'
+	id 'fabric-loom' version '1.11-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -45,7 +45,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
-	modImplementation("com.terraformersmc:modmenu:${project.modmenu_version}")
+	modApi ("com.terraformersmc:modmenu:${project.modmenu_version}")
 	modImplementation "dev.emi:trinkets:${trinkets_version}"
 
     modImplementation include("me.shedaniel:RoughlyEnoughItems-fabric:16.0.799")

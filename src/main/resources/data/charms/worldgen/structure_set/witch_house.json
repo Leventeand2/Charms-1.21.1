@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "charms:witch_house",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1694769153,
+    "spacing": 40,
+    "separation": 30
+  }
+}
