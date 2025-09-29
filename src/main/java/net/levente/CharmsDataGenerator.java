@@ -5,6 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.levente.datagen.*;
 import net.levente.world.ModConfiguredFeatures;
 import net.levente.world.ModPlacedFeatures;
+import net.minecraft.loot.context.LootContextType;
+import net.minecraft.loot.context.LootContextTypes;
 import net.minecraft.registry.RegistryBuilder;
 import net.minecraft.registry.RegistryKeys;
 
@@ -21,6 +23,8 @@ public class CharmsDataGenerator implements DataGeneratorEntrypoint {
         pack.addProvider(ModBlockTagProvider::new);
         pack.addProvider(ModRegistryDataGenerator::new);
         pack.addProvider(ModItemTagProvider::new);
+        pack.addProvider((output, registries) ->
+                new ModChestsLootTableProvider(output, registries, LootContextTypes.CHEST));
 	}
 
     @Override

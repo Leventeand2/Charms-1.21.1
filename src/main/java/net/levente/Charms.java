@@ -8,6 +8,7 @@ import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
 import net.levente.util.ModLootTableModifiers;
 import net.levente.world.gen.ModWorldGeneration;
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,4 +28,8 @@ public class Charms implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
         LOGGER.error("TODO: Modify the structure and add structure voids and make the loot tables and cover up the top chest.");
 	}
+
+    public static Identifier id(String path) {
+        return Identifier.of(MOD_ID, path);
+    }
 }
