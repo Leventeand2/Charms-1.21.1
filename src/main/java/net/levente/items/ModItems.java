@@ -1,12 +1,10 @@
 package net.levente.items;
 
-import dev.emi.trinkets.api.TrinketItem;
 import net.levente.Charms;
 import net.levente.items.custom.*;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 
 public class ModItems {
 
@@ -35,8 +33,10 @@ public class ModItems {
     public static final Item SATURATION_CHARM = registerItem("saturation_charm",
             new SaturationCharm(new Item.Settings().maxCount(1)));
 
+    // Strength, Haste
+
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, Identifier.of(Charms.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Charms.id(name), item);
     }
     public static void registerModItems() {
         Charms.LOGGER.info("Registering items for: " + Charms.MOD_ID);

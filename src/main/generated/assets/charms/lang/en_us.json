@@ -14,7 +14,7 @@
   "item.charms.sculk_charm": "Crown of the Warden",
   "itemgroup.charms.charms_group": "Charms Item Group",
   "tooltip.charms.ether_crown_tooltip": "§7When equipped:",
-  "tooltip.charms.ether_crown_tooltip_2": "§9Grants Luck III, and Night Vision, plus cancels Mining Fatigue and Poison.",
+  "tooltip.charms.ether_crown_tooltip_2": "§9Grants Luck III, Night Vision, and Fire Resistance III, plus cancels Mining Fatigue and Poison.",
   "tooltip.charms.lapis_ring_tooltip": "§7When equipped:",
   "tooltip.charms.lapis_ring_tooltip_2": "§9Grants Water Breathing I",
   "trinkets.slot.hand.bracelet": "Bracelet",

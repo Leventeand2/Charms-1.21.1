@@ -46,7 +46,7 @@ public class ModLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModItems.RAW_RUBY_AMULET, "Raw Ruby Amulet");
         translationBuilder.add(ModItems.ETHER_CROWN, "§6Ether Crown");
         addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_1, "§7When equipped:");
-        addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_2, "§9Grants Luck III, and Night Vision, plus cancels Mining Fatigue and Poison.");
+        addText(translationBuilder, EtherCrown.ETHER_CROWN_TOOLTIP_2, "§9Grants Luck III, Night Vision, and Fire Resistance III, plus cancels Mining Fatigue and Poison.");
         addText(translationBuilder, Text.translatable("trinkets.slot.head.crown"), "Crown");
         translationBuilder.add(ModItems.PURIFIED_GOLD_INGOT, "Purified Gold Ingot");
         addText(translationBuilder, Text.translatable("trinkets.slot.head.mask"),"Mask");

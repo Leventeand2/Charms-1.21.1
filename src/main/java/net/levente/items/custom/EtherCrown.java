@@ -31,6 +31,8 @@ public class EtherCrown extends TrinketItem {
         if (entity instanceof PlayerEntity player) {
             StatusEffectInstance luck = new StatusEffectInstance(StatusEffects.LUCK, -1, 3, true, false);
             StatusEffectInstance nVision = new StatusEffectInstance(StatusEffects.NIGHT_VISION, -1, 3, true, false);
+            StatusEffectInstance fireRes = new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, -1, 3, true, false, false);
+            player.addStatusEffect(fireRes);
             player.addStatusEffect(luck);
             player.addStatusEffect(nVision);
         }
@@ -40,9 +42,10 @@ public class EtherCrown extends TrinketItem {
     public void onUnequip(ItemStack stack, SlotReference slot, LivingEntity entity) {
         super.onEquip(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
-            if (player.hasStatusEffect(StatusEffects.LUCK) && player.hasStatusEffect(StatusEffects.NIGHT_VISION)) {
+            if (player.hasStatusEffect(StatusEffects.LUCK) && player.hasStatusEffect(StatusEffects.NIGHT_VISION) && player.hasStatusEffect(StatusEffects.FIRE_RESISTANCE)) {
                 player.removeStatusEffect(StatusEffects.LUCK);
                 player.removeStatusEffect(StatusEffects.NIGHT_VISION);
+                player.removeStatusEffect(StatusEffects.FIRE_RESISTANCE);
             }
         }
     }
