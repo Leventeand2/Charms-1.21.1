@@ -10,8 +10,15 @@ import net.minecraft.advancement.AdvancementEntry;
 import net.minecraft.advancement.AdvancementFrame;
 import net.minecraft.advancement.criterion.InventoryChangedCriterion;
 import net.minecraft.advancement.criterion.RecipeCraftedCriterion;
+import net.minecraft.advancement.criterion.TickCriterion;
+import net.minecraft.item.Items;
+import net.minecraft.predicate.entity.EntityPredicate;
+import net.minecraft.predicate.entity.LocationPredicate;
 import net.minecraft.predicate.item.ItemPredicate;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.registry.entry.RegistryEntryList;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
@@ -82,8 +89,8 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                 .parent(getRuby)
                 .display(
                         ModItems.ETHER_CROWN,
-                        Text.literal("Holy crown"),
-                        Text.literal("The holiest crown"),
+                        Text.literal("Holy crown!"),
+                        Text.literal("The holiest of crowns"),
                         null,
                         AdvancementFrame.CHALLENGE,
                         true,
@@ -94,5 +101,26 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                 .criterion("crafted_ether_crown", RecipeCraftedCriterion.Conditions.create(Identifier.of(Charms.MOD_ID, "ether_crown")))
 
                 .build(consumer, Charms.MOD_ID + ":craft_ether_crown");
+        /*AdvancementEntry findWitchHouse = Advancement.Builder.create()
+                .parent(getRuby)
+                .display(
+                        Items.WITCH_SPAWN_EGG,
+                        Text.literal("Halloween came early!"),
+                        Text.literal("Thank you for inviting me in!"),
+                        null,
+                        AdvancementFrame.GOAL,
+                        true,
+                        true,
+                        true
+                )
+
+                .criterion("found_witch_house", TickCriterion.Conditions.createLocation(
+                        EntityPredicate.Builder.create()
+                                .location(LocationPredicate.Builder.create()
+                                        .structure(RegistryEntryList.of(registryLookup
+                                                .getWrapperOrThrow(RegistryKeys.STRUCTURE)
+                                                .getOrThrow(RegistryKey.of(RegistryKeys.STRUCTURE, Charms.id("witch_house"))))))
+                ))
+                .build(consumer, Charms.MOD_ID + ":find_witch_house");*/
     }
 }

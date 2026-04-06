@@ -4,12 +4,14 @@ import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketItem;
 import dev.emi.trinkets.api.TrinketsApi;
+import net.levente.util.TrinketsHelperMethods;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
@@ -47,5 +49,19 @@ public class RawRubyAmulet extends TrinketItem {
         tooltip.add(Text.literal("§9Grants Slow Falling I"));
 
         super.appendTooltip(stack, context, tooltip, type);
+    }
+
+    @Override
+    public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        super.tick(stack, slot, entity);
+
+        if (entity instanceof PlayerEntity player) {
+            boolean hasCharm = TrinketsHelperMethods.isEquippedInSlot(player, this);
+            if (hasCharm) {
+                if (player.getWorld() instanceof ServerWorld serverWorld) {
+                    stack.damage(1, serverWorld, null, item -> {});
+                }
+            }
+        }
     }
 }

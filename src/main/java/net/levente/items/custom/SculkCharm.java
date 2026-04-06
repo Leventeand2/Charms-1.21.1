@@ -2,11 +2,13 @@ package net.levente.items.custom;
 
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
+import net.levente.util.TrinketsHelperMethods;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
@@ -19,11 +21,17 @@ public class SculkCharm extends TrinketItem {
 
     @Override
     public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
+        super.tick(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
             player.setSilent(true);
-        }
 
-        super.tick(stack, slot, entity);
+            boolean hasCharm = TrinketsHelperMethods.isEquippedInSlot(player, this);
+            if (hasCharm) {
+                if (player.getWorld() instanceof ServerWorld serverWorld) {
+                    stack.damage(1, serverWorld, null, item -> {});
+                }
+            }
+        }
     }
 
     @Override

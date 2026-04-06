@@ -7,6 +7,7 @@
     "charms:raw_ruby_amulet",
     "charms:ruby_amulet",
     "charms:sculk_charm",
-    "charms:saturation_charm"
+    "charms:saturation_charm",
+    "charms:damage_charm"
   ]
 }

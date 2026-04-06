@@ -33,5 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
         modelGen.register(ModItems.PURIFIED_GOLD_INGOT, Models.GENERATED);
         modelGen.register(ModItems.SCULK_CHARM, Models.GENERATED);
         modelGen.register(ModItems.SATURATION_CHARM, Models.GENERATED);
+        modelGen.register(ModItems.DAMAGE_CHARM, Models.GENERATED);
     }
 }

@@ -9,14 +9,14 @@
     }
   },
   "display": {
-    "description": "The holiest crown",
+    "description": "The holiest of crowns",
     "frame": "challenge",
     "hidden": true,
     "icon": {
       "count": 1,
       "id": "charms:ether_crown"
     },
-    "title": "Holy crown"
+    "title": "Holy crown!"
   },
   "requirements": [
     [

@@ -1,5 +1,6 @@
 {
   "replace": false,
+  "amount": 2,
   "values": [
     "charms:ruby_amulet",
     "charms:raw_ruby_amulet",

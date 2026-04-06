@@ -1,0 +1,26 @@
+{
+  "display": {
+    "icon": {
+      "id": "minecraft:witch_spawn_egg"
+    },
+    "title": "Halloween came early!",
+    "description": "Thank you for inviting me in!",
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "charms:get_ruby",
+  "criteria": {
+    "found_witch_house": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+          "location": {
+            "structures": "charms:witch_house"
+          }
+        }
+      }
+    }
+  }
+}

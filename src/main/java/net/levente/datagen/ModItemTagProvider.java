@@ -24,6 +24,7 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.RAW_RUBY_AMULET)
                 .add(ModItems.RUBY_AMULET)
                 .add(ModItems.SCULK_CHARM)
-                .add(ModItems.SATURATION_CHARM);
+                .add(ModItems.SATURATION_CHARM)
+                .add(ModItems.DAMAGE_CHARM);
     }
 }

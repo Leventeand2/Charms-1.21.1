@@ -31,6 +31,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModItems.SCULK_CHARM);
                         entries.add(ModItems.SATURATION_CHARM);
+                        entries.add(ModItems.DAMAGE_CHARM);
                     })).build());
 
 

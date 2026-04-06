@@ -3,6 +3,7 @@ package net.levente.items.custom;
 import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketItem;
 import net.levente.Charms;
+import net.levente.util.TrinketsHelperMethods;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -10,6 +11,7 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.tooltip.TooltipType;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 
@@ -76,6 +78,13 @@ public class EtherCrown extends TrinketItem {
 
             if (player.hasStatusEffect(StatusEffects.POISON)) {
                 player.removeStatusEffect(StatusEffects.POISON);
+            }
+
+            boolean hasCharm = TrinketsHelperMethods.isEquippedInSlot(player, this);
+            if (hasCharm) {
+                if (player.getWorld() instanceof ServerWorld serverWorld) {
+                    stack.damage(1, serverWorld, null, item -> {});
+                }
             }
         }
     }

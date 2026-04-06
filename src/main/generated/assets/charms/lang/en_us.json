@@ -2,6 +2,7 @@
   "block.charms.nether_ruby_ore": "Nether Ruby Ore",
   "item.charms.amulet_string": "Amulet String",
   "item.charms.basic_ring": "Ring",
+  "item.charms.damage_charm": "§cSurvivor's §bcharm",
   "item.charms.ether_crown": "§6Ether Crown",
   "item.charms.golden_bracelet": "§6Binding of §cSerenity",
   "item.charms.lapis_ring": "Lapis Ring",
@@ -14,10 +15,8 @@
   "item.charms.sculk_charm": "Crown of the Warden",
   "itemgroup.charms.charms_group": "Charms Item Group",
   "tooltip.charms.ether_crown_tooltip": "§7When equipped:",
-  "tooltip.charms.ether_crown_tooltip_2": "§9Grants Luck III, Night Vision, and Fire Resistance III, plus cancels Mining Fatigue and Poison.",
-  "tooltip.charms.lapis_ring_tooltip": "§7When equipped:",
-  "tooltip.charms.lapis_ring_tooltip_2": "§9Grants Water Breathing I",
+  "tooltip.charms.ether_crown_tooltip_2": "§9Grants Luck III, Night Vision, and Fire Resistance III, and cancels Mining Fatigue and Poison.",
+  "trinkets.slot.feet.anklet": "Anklet",
   "trinkets.slot.hand.bracelet": "Bracelet",
-  "trinkets.slot.head.crown": "Crown",
-  "trinkets.slot.head.mask": "Mask"
+  "trinkets.slot.head.crown": "Crown"
 }
