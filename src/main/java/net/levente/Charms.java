@@ -26,7 +26,7 @@ public class Charms implements ModInitializer {
         ModLootTableModifiers.modifyLootTables();
 
 		LOGGER.info("Hello Fabric world!");
-        LOGGER.error("TODO: Modify the structure and add structure voids and make the loot tables and cover up the top chest.");
+		LOGGER.info("Fix structure with structure blocks around the edge!");
 	}
 
     public static Identifier id(String path) {

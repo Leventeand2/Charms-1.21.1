@@ -1,0 +1,14 @@
+{
+  "structures": [
+    {
+      "structure": "charms:cottage",
+      "weight": 1
+    }
+  ],
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 1479659136,
+    "spacing": 40,
+    "separation": 30
+  }
+}
