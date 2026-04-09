@@ -95,32 +95,11 @@ public class ModAdvancementsProvider extends FabricAdvancementProvider {
                         AdvancementFrame.CHALLENGE,
                         true,
                         true,
-                        true
+                        false
                 )
 
                 .criterion("crafted_ether_crown", RecipeCraftedCriterion.Conditions.create(Identifier.of(Charms.MOD_ID, "ether_crown")))
 
                 .build(consumer, Charms.MOD_ID + ":craft_ether_crown");
-        /*AdvancementEntry findWitchHouse = Advancement.Builder.create()
-                .parent(getRuby)
-                .display(
-                        Items.WITCH_SPAWN_EGG,
-                        Text.literal("Halloween came early!"),
-                        Text.literal("Thank you for inviting me in!"),
-                        null,
-                        AdvancementFrame.GOAL,
-                        true,
-                        true,
-                        true
-                )
-
-                .criterion("found_witch_house", TickCriterion.Conditions.createLocation(
-                        EntityPredicate.Builder.create()
-                                .location(LocationPredicate.Builder.create()
-                                        .structure(RegistryEntryList.of(registryLookup
-                                                .getWrapperOrThrow(RegistryKeys.STRUCTURE)
-                                                .getOrThrow(RegistryKey.of(RegistryKeys.STRUCTURE, Charms.id("witch_house"))))))
-                ))
-                .build(consumer, Charms.MOD_ID + ":find_witch_house");*/
     }
 }

@@ -4,6 +4,7 @@
   "values": [
     "charms:ruby_amulet",
     "charms:raw_ruby_amulet",
-    "charms:saturation_charm"
+    "charms:saturation_charm",
+    "charms:stats_charm"
   ]
 }

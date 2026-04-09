@@ -3,9 +3,9 @@ package net.levente;
 import net.fabricmc.api.ModInitializer;
 
 import net.levente.blocks.ModBlocks;
-import net.levente.component.ModDataComponentTypes;
 import net.levente.items.ModItemGroups;
 import net.levente.items.ModItems;
+import net.levente.util.ModEvents;
 import net.levente.util.ModLootTableModifiers;
 import net.levente.world.gen.ModWorldGeneration;
 import net.minecraft.util.Identifier;
@@ -21,12 +21,11 @@ public class Charms implements ModInitializer {
 		ModItems.registerModItems();
 		ModItemGroups.registerItemGroups();
         ModBlocks.registerModBlocks();
-        ModDataComponentTypes.registerDataCompTypes();
         ModWorldGeneration.generateModWorldGen();
         ModLootTableModifiers.modifyLootTables();
+		ModEvents.registerModEvents();
 
 		LOGGER.info("Hello Fabric world!");
-		LOGGER.info("Fix structure with structure blocks around the edge!");
 	}
 
     public static Identifier id(String path) {

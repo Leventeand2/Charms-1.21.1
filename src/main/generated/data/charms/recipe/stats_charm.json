@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "S": {
+      "item": "charms:amulet_string"
+    }
+  },
+  "pattern": [
+    "S  ",
+    "A  ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "charms:stats_charm"
+  }
+}

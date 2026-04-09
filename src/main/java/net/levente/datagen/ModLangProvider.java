@@ -51,7 +51,9 @@ public class ModLangProvider extends FabricLanguageProvider {
         translationBuilder.add(ModBlocks.NETHER_RUBY_ORE, "Nether Ruby Ore");
         translationBuilder.add(ModItems.SCULK_CHARM, "Crown of the Warden");
         translationBuilder.add(ModItems.SATURATION_CHARM, "§6Amulet §fof §bGluttony");
-        translationBuilder.add(ModItems.DAMAGE_CHARM, "§cSurvivor's §bcharm");
+        translationBuilder.add(ModItems.DAMAGE_CHARM, "The §cSurvivor's §bcharm");
         addText(translationBuilder, Text.translatable("trinkets.slot.feet.anklet"), "Anklet");
+        translationBuilder.add(ModItems.CLOSE_CALL_CHARM, "Close Call Charm");
+        translationBuilder.add(ModItems.STATS_CHARM, "§6Lucky §9charm");
     }
 }

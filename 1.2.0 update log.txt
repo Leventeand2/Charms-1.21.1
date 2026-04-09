@@ -1,0 +1,3 @@
+durability added to all charms
+fixed some bugs
+new charm: Survivor's charm: 

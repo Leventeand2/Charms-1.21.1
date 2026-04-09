@@ -1,11 +1,15 @@
-// 1.21.1	2026-04-06T21:54:43.6256109	Charms 'n Relics/Recipes
-41d76ecd826136742a09cb4ace486c4aeab2e1a4 data\charms\recipe\amulet_string.json
+// 1.21.1	2026-04-09T14:45:00.3790274	Charms 'n Relics/Recipes
+d89f3136b795dd9cca898bb26a9c369e5e741536 data\charms\recipe\amulet_string.json
 b28532c4a304127557284320082ec7588ce31b99 data\charms\recipe\raw_ruby_amulet.json
 013e219ead6dfd31c830b540235b468442378aa8 data\charms\advancement\recipes\misc\saturation_charm.json
 3ddef407106ab2771981f3807b70faa3e9ecb526 data\charms\recipe\golden_bracelet.json
+5c8a3896b25ce6ebc2403ab1513f18049e8f4006 data\charms\advancement\recipes\misc\damage_charm.json
+6820c5839bf12e37801cceca195522f807a40794 data\charms\advancement\recipes\misc\stats_charm.json
 23840727cff061672148a9cebfb4f722bdf661df data\charms\advancement\recipes\misc\lapis_ring.json
 d91401c96ab79d15ce5cbd71376f1792b5bae04b data\charms\advancement\recipes\misc\sculk_charm.json
 6c5035a5277a48de21199b3ee9e7a89e1d39493c data\charms\recipe\ether_crown.json
+211896aec8255255e38fa5d202615ca451526bf7 data\charms\recipe\damage_charm.json
+4de77986105dcdcb0e9f5412d2d52acf61772c36 data\charms\recipe\stats_charm.json
 720480ee4a521d4668b9ef6e91f40a41c4491837 data\charms\recipe\ruby_amulet.json
 a898c04793bf218c39d8185f04c10eca0a43449d data\charms\recipe\sculk_charm.json
 8c95ace93ba673eccc4eaccfbfa07a21a53c71ce data\charms\recipe\ruby_from_blasting_raw_ruby.json
@@ -14,6 +18,7 @@ a898c04793bf218c39d8185f04c10eca0a43449d data\charms\recipe\sculk_charm.json
 ac249036f8603c405deb3c48238fdc51b119ccc0 data\charms\advancement\recipes\misc\ruby_from_smelting_raw_ruby.json
 1c8466fc1964d213b45e53f6eecf5f8d75f19f8e data\charms\advancement\recipes\misc\ether_crown.json
 ed739efcf8afa914e7af2771d7a06105325722a5 data\charms\advancement\recipes\misc\golden_bracelet.json
+838557f394bb5fadf05d5f4e751a937b994b0835 data\charms\advancement\recipes\misc\close_call_charm.json
 e4aa91f0e5b7af6ad5375b469562a4355e494d34 data\charms\advancement\recipes\misc\ruby_amulet.json
 7916890fd6acfc170420e07be0ba8403d0ec0c43 data\charms\advancement\recipes\misc\ruby_from_blasting_raw_ruby.json
 f5e635f5b57c3de0d2e877e77c3141a4acaeb3a6 data\charms\advancement\recipes\misc\purified_gold_ingot_from_blasting_gold_block.json
@@ -25,3 +30,4 @@ bc2dfdb172a577aa86be859f26312cc0ca229249 data\charms\recipe\purified_gold_ingot_
 a9412c196fa83ef4294e892a92803e1d9077ffeb data\charms\recipe\lapis_ring.json
 cb627d8293ff0a6b7361a5972c276a93ee6a9aae data\charms\recipe\purified_gold_ingot_from_smelting_gold_block.json
 e53b0a4094899034716b9fa0c5a47fd1cdeb412e data\charms\advancement\recipes\misc\amulet_string.json
+7d26f89c3e5af8438674f7134abb2d30b3dec1be data\charms\recipe\close_call_charm.json

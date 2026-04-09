@@ -25,7 +25,10 @@ public class ModLootTableModifiers {
                         .with(ItemEntry.builder(ModItems.RAW_RUBY_AMULET).weight(1))
                         .with(ItemEntry.builder(ModItems.ETHER_CROWN).weight(1))
                         .with(ItemEntry.builder(ModItems.SCULK_CHARM).weight(1))
-                        .with(ItemEntry.builder(ModItems.SATURATION_CHARM).weight(1));
+                        .with(ItemEntry.builder(ModItems.SATURATION_CHARM).weight(1))
+                        .with(ItemEntry.builder(ModItems.DAMAGE_CHARM).weight(1))
+                        .with(ItemEntry.builder(ModItems.CLOSE_CALL_CHARM).weight(1))
+                        .with(ItemEntry.builder(ModItems.STATS_CHARM).weight(1));
 
                 tableBuilder.pool(pool);
             }
@@ -50,6 +53,9 @@ public class ModLootTableModifiers {
                 .with(ItemEntry.builder(ModItems.RAW_RUBY_AMULET).weight(1))
                 .with(ItemEntry.builder(ModItems.ETHER_CROWN).weight(1))
                 .with(ItemEntry.builder(ModItems.SCULK_CHARM).weight(1))
-                .with(ItemEntry.builder(ModItems.SATURATION_CHARM).weight(1));
+                .with(ItemEntry.builder(ModItems.SATURATION_CHARM).weight(1))
+                .with(ItemEntry.builder(ModItems.DAMAGE_CHARM).weight(1))
+                .with(ItemEntry.builder(ModItems.CLOSE_CALL_CHARM).weight(1))
+                .with(ItemEntry.builder(ModItems.STATS_CHARM).weight(1));
     }
 }

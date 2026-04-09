@@ -25,7 +25,7 @@ public class SculkCharm extends TrinketItem {
         if (entity instanceof PlayerEntity player) {
             player.setSilent(true);
 
-            boolean hasCharm = TrinketsHelperMethods.isEquippedInSlot(player, this);
+            boolean hasCharm = TrinketsHelperMethods.isEquipped(player, this);
             if (hasCharm) {
                 if (player.getWorld() instanceof ServerWorld serverWorld) {
                     stack.damage(1, serverWorld, null, item -> {});

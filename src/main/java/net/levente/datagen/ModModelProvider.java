@@ -5,9 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.levente.blocks.ModBlocks;
 import net.levente.items.ModItems;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.data.client.*;
+import net.minecraft.util.Identifier;
+
+import java.util.Optional;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -34,5 +35,7 @@ public class ModModelProvider extends FabricModelProvider {
         modelGen.register(ModItems.SCULK_CHARM, Models.GENERATED);
         modelGen.register(ModItems.SATURATION_CHARM, Models.GENERATED);
         modelGen.register(ModItems.DAMAGE_CHARM, Models.GENERATED);
+        modelGen.register(ModItems.CLOSE_CALL_CHARM, Models.GENERATED);
+        modelGen.register(ModItems.STATS_CHARM, Models.GENERATED);
     }
 }

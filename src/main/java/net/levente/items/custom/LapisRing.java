@@ -1,7 +1,6 @@
 package net.levente.items.custom;
 
 import dev.emi.trinkets.api.*;
-import net.levente.Charms;
 import net.levente.util.TrinketsHelperMethods;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.effect.StatusEffectInstance;
@@ -45,7 +44,7 @@ public class LapisRing extends TrinketItem {
         super.tick(stack, slot, entity);
         if (entity instanceof PlayerEntity player) {
             if (player.hasStatusEffect(StatusEffects.CONDUIT_POWER) && player.hasStatusEffect(StatusEffects.DOLPHINS_GRACE)) {
-                boolean hasCharm = TrinketsHelperMethods.isEquippedInSlot(player, this);
+                boolean hasCharm = TrinketsHelperMethods.isEquipped(player, this);
                 if (hasCharm) {
                     if (player.getWorld() instanceof ServerWorld serverWorld) {
                         stack.damage(1, serverWorld, null, item -> {});
@@ -58,5 +57,7 @@ public class LapisRing extends TrinketItem {
     @Override
     public void appendTooltip(ItemStack stack, TooltipContext context, List<Text> tooltip, TooltipType type) {
         super.appendTooltip(stack, context, tooltip, type);
+        tooltip.add(Text.literal("§7When equipped:"));
+        tooltip.add(Text.literal("§9Grants Water Breathing II"));
     }
 }

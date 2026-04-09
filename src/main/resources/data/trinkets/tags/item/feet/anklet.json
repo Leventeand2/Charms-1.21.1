@@ -1,7 +1,8 @@
 {
   "replace": false,
-  "amount": 1,
+  "amount": 2,
   "values": [
-    "charms:damage_charm"
+    "charms:damage_charm",
+    "charms:close_call_charm"
   ]
 }

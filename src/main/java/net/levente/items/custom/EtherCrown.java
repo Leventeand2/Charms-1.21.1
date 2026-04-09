@@ -80,7 +80,7 @@ public class EtherCrown extends TrinketItem {
                 player.removeStatusEffect(StatusEffects.POISON);
             }
 
-            boolean hasCharm = TrinketsHelperMethods.isEquippedInSlot(player, this);
+            boolean hasCharm = TrinketsHelperMethods.isEquipped(player, this);
             if (hasCharm) {
                 if (player.getWorld() instanceof ServerWorld serverWorld) {
                     stack.damage(1, serverWorld, null, item -> {});

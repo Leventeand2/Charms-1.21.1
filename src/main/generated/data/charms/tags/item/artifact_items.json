@@ -8,6 +8,8 @@
     "charms:ruby_amulet",
     "charms:sculk_charm",
     "charms:saturation_charm",
-    "charms:damage_charm"
+    "charms:damage_charm",
+    "charms:close_call_charm",
+    "charms:stats_charm"
   ]
 }

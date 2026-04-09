@@ -25,9 +25,9 @@ public class ModRecipesProvider extends FabricRecipeProvider {
         List<ItemConvertible> RUBY_SMELTING = List.of(ModItems.RAW_RUBY);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.AMULET_STRING)
-                .pattern("GGG")
                 .pattern("G G")
-                .pattern("GGG")
+                .pattern("G G")
+                .pattern(" G ")
                 .input('G', Items.GOLD_NUGGET)
                 .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
                 .offerTo(exporter);
@@ -125,5 +125,29 @@ public class ModRecipesProvider extends FabricRecipeProvider {
                 .criterion(hasItem(Items.COOKED_BEEF), conditionsFromItem(Items.COOKED_BEEF))
                 .criterion(hasItem(ModItems.AMULET_STRING), conditionsFromItem(ModItems.AMULET_STRING))
                 .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.DAMAGE_CHARM)
+                .pattern("GGG")
+                .pattern("G G")
+                .pattern("GGG")
+                .input('G', Items.GOLD_NUGGET)
+                .criterion(hasItem(Items.GOLD_NUGGET), conditionsFromItem(Items.GOLD_NUGGET))
+                .offerTo(exporter);
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.CLOSE_CALL_CHARM)
+                .input(ModItems.DAMAGE_CHARM)
+                .input(Items.TOTEM_OF_UNDYING)
+                .criterion(hasItem(ModItems.DAMAGE_CHARM), conditionsFromItem(ModItems.DAMAGE_CHARM))
+                .criterion(hasItem(Items.TOTEM_OF_UNDYING), conditionsFromItem(Items.TOTEM_OF_UNDYING))
+                .offerTo(exporter);
+        ShapedRecipeJsonBuilder.create(RecipeCategory.MISC, ModItems.STATS_CHARM)
+                .pattern("S  ")
+                .pattern("A  ")
+                .pattern("   ")
+                .input('S', ModItems.AMULET_STRING)
+                .input('A', Items.AMETHYST_SHARD)
+                .criterion(hasItem(ModItems.AMULET_STRING), conditionsFromItem(ModItems.AMULET_STRING))
+                .criterion(hasItem(Items.AMETHYST_SHARD), conditionsFromItem(Items.AMETHYST_SHARD))
+                .offerTo(exporter);
+
+
     }
 }

@@ -32,6 +32,8 @@ public class ModItemGroups {
                         entries.add(ModItems.SCULK_CHARM);
                         entries.add(ModItems.SATURATION_CHARM);
                         entries.add(ModItems.DAMAGE_CHARM);
+                        entries.add(ModItems.CLOSE_CALL_CHARM);
+                        entries.add(ModItems.STATS_CHARM);
                     })).build());
 
 

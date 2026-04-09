@@ -1,3 +1,6 @@
-// 1.21.1	2026-04-06T21:54:43.6269369	Charms 'n Relics/minecraft:chest Loot Table
-23749929f17d555c9a9a80382a1a2e80737516a3 data\charms\loot_table\chests\witch_house_loot.json
-8c0feed21516505aae01bd8d200d64d7c50168f0 data\charms\loot_table\chests\witch_house_secret_loot.json
+// 1.21.1	2026-04-09T14:45:00.381454	Charms 'n Relics/minecraft:chest Loot Table
+468a2f4983aada4cdf2baf1039b70f478c56f019 data\charms\loot_table\chests\cottage\barrel.json
+23749929f17d555c9a9a80382a1a2e80737516a3 data\charms\loot_table\chests\witch_house\non_secret.json
+6663020272b804ad35a62dddb90fc32d18836d42 data\charms\loot_table\chests\cottage\large.json
+accfffe4dc68172c3cab446aa4f49fdb1496c7d2 data\charms\loot_table\chests\cottage\small.json
+8c0feed21516505aae01bd8d200d64d7c50168f0 data\charms\loot_table\chests\witch_house\secret.json
